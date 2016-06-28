@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>无标题文档</title>
+<link href="../skins/css/base.css" rel="stylesheet" type="text/css">
+<link href="../skins/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrap">
+	<ul class="listLS" id="listLS" rel-getDataUrl="../tempData/listLS.json?" rel-setDataParam="{'page':true,'pageId':'#pageWrap','pageLoadType':'moreClick','writeType':'append','dataLen':10,'tplName':'../templates/listLS_tpl.html'}"></ul>
+	<div id="pageWrap"><a class="__pageBtn__" href="javascript:void(0);">点击查看更多</a></div>
+</div>
+
+<script src="../skins/js/jquery-2.1.1.min.js"></script>
+<script src="../skins/js/doT.min.js"></script>
+<script src="../skins/js/mixedTmplData.js"></script>
+<script src="../skins/js/swiper.min.js"></script>
+<script>
+$(function(){
+	//
+	$('#listLS').heart_getData();
+});
+</script>
+</body>
+</html>

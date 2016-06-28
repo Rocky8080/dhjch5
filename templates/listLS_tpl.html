@@ -1,0 +1,26 @@
+{%
+	if(it.success){
+		if(it.data.length>0){
+			var idl;
+			for(var i = 0, len = it.data.length; i < len; i++){ 
+				idl = it.data[i];
+%}
+	<li>
+			<a href="show.html?id={%=idl.id%}">
+				<div class="imgWrap"><img src="{%=idl.img_url%}" width="100%"></div>
+				<dl class="oh">
+					<dt>{%=idl.title%}</dt>
+					<dd>{%=idl.summary%}</dd>
+				</dl>
+				<span class="lb">{%=idl.create_time%}</span>
+			</a>
+		</li>
+{%
+			}
+		}else{
+%}
+	暂无
+{%
+		}
+	}
+%}

@@ -1,0 +1,54 @@
+{%
+	if(it.success){
+		if(it.data.length>0){
+			var idl = it.data[0];
+%}
+	<header>
+			<h1>{%=idl.title%}</h1>
+			<p>{%=idl.create_time%}</p>
+			<aside>{%=idl.summary%}</aside>
+		</header>
+		<section class="mainRoute">
+			<h2>线路总览</h2>
+			<div>
+				<img src="{%=idl.main_route.img_url%}" width="100%">
+				<p>{%=idl.main_route.description%}</p>
+			</div>
+		</section>
+		<section class="referrer">
+			<h2>线路推荐人</h2>
+			<div>
+				<img src="{%=idl.referrer.img_url%}" width="100%">
+				<p><strong>推荐人：{%=idl.referrer.name%}</strong></p>
+				<p>{%=idl.referrer.description%}</p>
+			</div>
+		</section>
+		<div class="scenery">
+			<section class="photos">
+			{%
+				var idp;
+				for(var i = 0,len = idl.photos.length; i < len; i++){
+					idp = idl.photos[i];
+			%}
+				<h3>{%=idp.title%}</h3>
+				<div>
+					<p><strong>类型：</strong>{%=idp.type%}　　<strong>坐标：</strong>{%=idp.location%}</p>
+					<p><strong>区域：</strong>{%=idp.area%}</p>
+					<p>{%=idp.description%}</p>
+				</div>
+				<div class="oh">
+					<a class="showSceneryBtn" href="javascript:void(0);" rel-group="{%=i%}"><img src="{%=it.data[0].photos[i].images[0] %}" width="100%"></a>
+				</div>			
+			{%
+				}
+			%}
+            </section>
+		</div>
+{%
+		}else{
+%}
+	暂无
+{%
+		}
+	}
+%}

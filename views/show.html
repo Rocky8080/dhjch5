@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>无标题文档</title>
+<link href="../skins/css/base.css" rel="stylesheet" type="text/css">
+<link href="../skins/css/swiper.min.css" rel="stylesheet" type="text/css">
+<link href="../skins/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrap">
+	<div id="showWrap" class="showWrap" rel-getDataUrl="../tempData/show.json?" rel-setDataParam="{'callBack':'show','tplName':'../templates/show_tpl.html'}"></div>
+</div>
+<script src="../skins/js/jquery-2.1.1.min.js"></script> 
+<script src="../skins/js/doT.min.js"></script> 
+<script src="../skins/js/mixedTmplData.js"></script> 
+<script src="../skins/js/swiper.min.js"></script> 
+<script>
+$(function(){
+	//
+	$('#showWrap').heart_getData();	
+});
+function show(id,json){	
+	//弹出
+	$('body').on('click','.showSceneryBtn',function(){
+		var groupID = $(this).attr('rel-group');
+		showContent(json,groupID);
+	});
+	//关闭
+	//
+	$('body').on('click','#backBtn',function(){
+		var top = $('.photos h3').eq($('#showWrap').attr('group')).offset().top;
+		$('html,body').removeClass('ovfHiden'); //使网页恢复可滚动
+		setTimeout(function(){
+			$(".dialogPop , .dialogBg").remove();
+			$("html,body").animate({scrollTop:top},1000);
+		},200);
+	});	
+	//更换景风组
+	$('body').on('click','.xl img[class!=curImg]',function(){
+		var groupID = $(this).attr('rel-group');
+		$('.xl').hide();
+		$('#showWrap').attr('group',groupID)
+		showContent(json,groupID);
+	});	
+}
+function showContent(json,group){
+		var groupID =group;
+		var getImgList = function(group){
+				var list = '';
+				
+					for(var i = 0,len = json.data[0].photos[group].images.length; i < len; i++){
+						list += '<div class="swiper-slide"><img src="'+ json.data[0].photos[group].images[i] +'" width="100%"></div>';
+					}
+					return list;
+			};
+		var getxlList = function(){
+				var list = '';
+				var curImg = '';
+					for(var i = 0,len = json.data[0].photos.length; i < len; i++){
+						if(groupID == i) curImg = 'curImg'; else curImg = '';
+						list += '<div class="swiper-slide"><img rel-group="'+ i +'"  class="'+ curImg +'" src="'+json.data[0].photos[i].images[0] +'"></div>';
+					}
+					return list;
+			};
+		var getDes = function(){
+				return json.data[0].photos[groupID].description;
+			};
+		var html = '<div class="P dialogPop">\
+							<div class="topBar">\
+								<div class="backWrap fl"><a id="backBtn" href="javascript:void(0);"><img src="../skins/images/backIcon.png"></a></div>\
+								<div class="xlWrap">\
+									<!---->\
+									<div class="xl swiper-container">\
+										<div class="swiper-wrapper">'+getxlList()+'</div>\
+									</div>\
+									<!---->\
+								</div>\
+							</div>\
+							<div class="content">\
+								<!---->\
+								<div class="photoWrap swiper-container">\
+									<div class="swiper-wrapper">'+getImgList(groupID)+'</div>\
+								</div>\
+								<!---->\
+							</div>\
+							<div class="footer">'+ getDes() +'</div>\
+						</div>\
+						<div class="dialogBg"></div>';
+		$('body').append(html);
+		$('html,body').addClass('ovfHiden'); //使网页不可滚动
+		$('.xl').hide().fadeToggle('slow');
+		setTimeout(function(){
+			
+			var photos = new Swiper('.photoWrap',{
+					pagination: '.swiper-p1',
+					slidesPerView : 1,
+					centeredSlides : true,
+					effect : 'coverflow',
+					});
+			var lxs = new Swiper('.xl',{
+					pagination: '.swiper-p2',
+					slidesPerView : 3,
+					initialSlide :groupID,
+					centeredSlides : true,
+					});
+			},100);	
+}
+</script>
+</body>
+</html>
