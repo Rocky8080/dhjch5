@@ -11,38 +11,38 @@
 			"create_time":"2016/05/29",
 			"video_url":"http://xxx.xxx.com/1.mp4",
 			"main_route": {
-				"img_url":"../tempFile/12.jpg",
+				"img_url":"../tempFile/main_route.jpg",
 				"description":"不论是夜晚环境恶劣的死亡谷，还是白天一望无际的莹莹绿地，一切风景在凯耶的镜头下都和星星为伴，变身成美丽迷人的星际景观大片。"
 			},
 			"referrer":{
-				"name":"李明峰",
-				"description":"美国宇航员斯图尔特 凯耶日前在该国拍摄了一组迷人星际景观大片，梦幻景象令人如痴如醉。",
-				"img_url":"../tempFile/23.jpg",
+				"name":"线路总览",
+				"description":" ",
+				"img_url":"../tempFile/map.jpg",
 			},
 			"photos":[
 				{
-					"title":"第一个风景组",
+					"title":"起点 天北路与怀昌路交叉口左转西行",
 					"type":"danger",
 					"area":"电业局环形车道",
 					"description":"风景如画，人生如戏，你会邂逅什么样的地方，有怎样的故事，都交给时间去解答。每个人眼中的同一片天空都有着不同的传达，每个人的路也有着各自的走法，但是对于大自然的热爱，对于美景的欣赏，却是每个人都值得享受、怀念。",
 					"location":[116.123,40.14141],
-					"images":["../tempFile/1.jpg","../tempFile/12.jpg","../tempFile/2.jpg","../tempFile/listImg.gif"]
+					"images":["../tempFile/11.jpg","../tempFile/12.jpg","../tempFile/13.jpg"]
 				},
 				{
-					"title":"第二个风景组",
+					"title":"安四路乌龟山休息平台",
 					"type":"danger",
 					"area":"电业局环形车道",
 					"description":"对于美景的欣赏，却是每个人都值得享受、怀念。",
 					"location":[116.123,40.14141],
-					"images":["../tempFile/12.jpg","../tempFile/23.jpg","../tempFile/3.jpg","../tempFile/4.jpg"]
+					"images":["../tempFile/21.jpg","../tempFile/22.jpg","../tempFile/23.jpg"]
 				},
 				{
-					"title":"第三个风景组",
+					"title":"午餐时间到啦 泉水渔家",
 					"type":"danger",
 					"area":"电业局环形车道",
 					"description":"风景如画，人生如戏，你会邂逅什么样的地方，有怎样的故事，都交给时间去解答。每个人眼中的同一片天空都有着不同的传达，每个人的路也有着各自的走法，但是对于大自然的热爱，对于美景的欣赏，却是每个人都值得享受、怀念。",
 					"location":[116.123,40.14141],
-					"images":["../tempFile/1.jpg","../tempFile/12.jpg","../tempFile/2.jpg","../tempFile/listImg.gif"]
+					"images":["../tempFile/31.jpg","../tempFile/32.jpg"]
 				},
 				{
 					"title":"第四个风景组",
