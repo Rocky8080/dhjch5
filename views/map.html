@@ -32,6 +32,8 @@
     }
     </style>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
     <script src="../skins/js/function.js"></script> 
 </head>
 
@@ -43,7 +45,9 @@
 </html>
 <script type="text/javascript">
 //获取坐标系
-var mapJson = getQueryString('routes').split('|');
+var mapJson = [];
+if (getQueryString('routes') != null)
+    mapJson = getQueryString('routes').split('|');
 var mapLoction = getQueryString('location');
 
 
@@ -96,29 +100,7 @@ window.onload = function() {
         });
         map.addOverlay(polyline);
 
-        /*信息窗口*/
-        if(mapLoction != null && mapLoction != 'undefined' && mapLoction != ''){
-	        var sContent = "location: " + mapLoction;
-	        var marker = new BMap.Marker(new BMap.Point(115.880245, 40.150255)); // 创建标注      
-	        map.addOverlay(marker);
 
-	        var opts = {
-	            width: 0, // 信息窗口宽度      
-	            height: 0 // 信息窗口高度      
-	        }
-	        var infoWindow = new BMap.InfoWindow(sContent, opts); // 创建信息窗口对象      
-	        map.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
-
-
-	        marker.addEventListener("click", function() {
-	            this.openInfoWindow(infoWindow);
-	            //图片加载完毕重绘infowindow
-	            document.getElementById('imgDemo').onload = function() {
-	                infoWindow.redraw(); //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
-	            }
-	        });
-    	}
-        /*信息窗口 结束*/
 
         //调整到最佳视野
         setTimeout(function() {
@@ -126,6 +108,53 @@ window.onload = function() {
         }, 500);
 
     });
+
+    /*信息窗口*/
+    if(mapLoction != null && mapLoction != 'undefined' && mapLoction != ''){
+        var sContent = "location: " + mapLoction;
+        var marker = new BMap.Marker(new BMap.Point(115.880245, 40.150255)); // 创建标注
+        map.addOverlay(marker);
+
+        var opts = {
+            width: 0, // 信息窗口宽度
+            height: 0 // 信息窗口高度
+        }
+
+        var sContent =
+                "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>天安门</h4>" +
+                "<img style='margin:4px' id='imgDemo' src='http://app.baidu.com/map/images/tiananmen.jpg' width='139' height='104' title='天安门'/>" +
+                "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>天安门坐落在中国北京市中心,故宫的南侧,与天安门广场隔长安街相望,是清朝皇城的大门...</p>" +
+                "</div>";
+
+
+        var searchInfoWindow1 = new BMapLib.SearchInfoWindow(map, "地址导航", {
+//            title: "地址导航", //标题
+//            panel : "panel", //检索结果面板
+            enableAutoPan : true, //自动平移
+            searchTypes :[
+                BMAPLIB_TAB_FROM_HERE, //从这里出发
+                BMAPLIB_TAB_TO_HERE   //周边检索
+            ]
+        });
+
+            searchInfoWindow1.open(new BMap.Point(115.880245, 40.150255));
+
+
+//        var infoWindow = new BMap.InfoWindow(sContent, opts); // 创建信息窗口对象
+//        map.openInfoWindow(infoWindow); // 打开信息窗口
+
+
+        marker.addEventListener("click", function() {
+            searchInfoWindow1.open(new BMap.Point(115.880245, 40.150255));
+
+//            this.openInfoWindow(infoWindow);
+            //图片加载完毕重绘infowindow
+//            document.getElementById('imgDemo').onload = function() {
+//                infoWindow.redraw(); //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+//            }
+        });
+    }
+    /*信息窗口 结束*/
 }
 
 
