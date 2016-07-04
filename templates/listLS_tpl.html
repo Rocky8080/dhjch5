@@ -7,7 +7,7 @@
 %}
 	<li>
 			<a href="show.html?id={%=idl.id%}">
-				<div class="imgWrap"><img src="{%=idl.img_url%}" width="100%"></div>
+				<div class="imgWrap"><img src="{%=repPath(idl.img_url,idl.id)%}" width="100%"></div>
 				<dl class="oh">
 					<dt>{%=idl.title%}</dt>
 					<dd>{%=idl.summary%}</dd>

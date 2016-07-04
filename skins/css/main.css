@@ -88,6 +88,10 @@
 #showWrap .scenery p {
 	margin: 0.5rem 0;
 }
+#showWrap .video{
+	overflow:hidden;
+	margin:2rem 0;
+}
 #pageWrap {
 	text-align: center;
 	padding: 2rem 0 1rem 0;
@@ -200,4 +204,14 @@
 }
 .xl {
 	width: clac(100%-5rem);
+}
+
+#mapPop{
+	display:block;
+	position:fixed;
+	width:4rem;
+	height:4rem;
+	top:6rem;
+	right:10px;
+	z-index:102;
 }

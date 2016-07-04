@@ -11,18 +11,30 @@
 		<section class="mainRoute">
 			<h2>线路总览</h2>
 			<div>
-				<a href='../views/map.html'>
-				<img src="{%=idl.main_route.img_url%}" width="100%" >
-					
-				</img>
+				<a href='../views/map.html?routes={%=setLocationFun(idl.locationAll)%}'>
+				<img src="{%=repPath(idl.main_route.img_url,getQueryString('id'))%}" width="100%" >
 				</a>
 				<p>{%=idl.main_route.description%}</p>
 			</div>
 		</section>
+		{%
+			if(idl.video_url != '' && idl.video_url != null){
+		%}
+		<section class="video">
+			<div>
+				<video width="100%" height="auto" controls>
+				  <source src="{%=repPath(idl.video_url,getQueryString('id'))%}" type="video/mp4">
+				   Your browser does'nt support video embedding feature.
+				</video>
+			</div>
+		</section>
+		{%
+			}
+		%}
 		<section class="referrer">
 			<h2>线路推荐人</h2>
 			<div>
-				<img src="{%=idl.referrer.img_url%}" width="100%">
+				<img src="{%=repPath(idl.referrer.img_url,getQueryString('id'))%}" width="100%">
 				<p><strong>推荐人：{%=idl.referrer.name%}</strong></p>
 				<p>{%=idl.referrer.description%}</p>
 			</div>
@@ -41,7 +53,7 @@
 					<p>{%=idp.description%}</p>
 				</div>
 				<div class="oh">
-					<a class="showSceneryBtn" href="javascript:void(0);" rel-group="{%=i%}"><img src="{%=it.data[0].photos[i].images[0] %}" width="100%"></a>
+					<a class="showSceneryBtn" href="javascript:void(0);" rel-group="{%=i%}"><img src="{%=repPath(it.data[0].photos[i].images[0],getQueryString('id')) %}" width="100%"></a>
 				</div>			
 			{%
 				}
