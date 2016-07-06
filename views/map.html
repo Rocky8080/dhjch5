@@ -49,7 +49,7 @@ var mapJson = [];
 if (getQueryString('routes') != null)
     mapJson = getQueryString('routes').split('|');
 var mapLoction = getQueryString('location');
-
+var mapGps = toBPoint(mapLoction);
 
 
 var map = new BMap.Map("allmap");
@@ -68,6 +68,13 @@ for (var i = 1, len = (mapJson.length + 1); i < len; i++) {
     myP[i] = new BMap.Point(_point[0], _point[1]);
 }
 
+function toBPoint(gpsLocation){
+    if (gpsLocation == null || gpsLocation == "")
+        return null;
+    var _point = [];
+    _point = gpsLocation.split(',');
+    return new BMap.Point(_point[0], _point[1]);
+}
 
 //var myP1 = new BMap.Point(106.521436,29.532288);    //起点-重庆
 //var myP2 = new BMap.Point(108.983569,34.285675);    //终点-西安
@@ -112,7 +119,7 @@ window.onload = function() {
     /*信息窗口*/
     if(mapLoction != null && mapLoction != 'undefined' && mapLoction != ''){
         var sContent = "location: " + mapLoction;
-        var marker = new BMap.Marker(new BMap.Point(115.880245, 40.150255)); // 创建标注
+        var marker = new BMap.Marker(mapGps); // 创建标注
         map.addOverlay(marker);
 
         var opts = {
@@ -129,23 +136,27 @@ window.onload = function() {
 
         var searchInfoWindow1 = new BMapLib.SearchInfoWindow(map, "地址导航", {
 //            title: "地址导航", //标题
-//            panel : "panel", //检索结果面板
+            panel : "panel", //检索结果面板
             enableAutoPan : true, //自动平移
             searchTypes :[
-                BMAPLIB_TAB_FROM_HERE, //从这里出发
-                BMAPLIB_TAB_TO_HERE   //周边检索
+                BMAPLIB_TAB_TO_HERE,   //周边检索
+                BMAPLIB_TAB_FROM_HERE //从这里出发
             ]
         });
 
-            searchInfoWindow1.open(new BMap.Point(115.880245, 40.150255));
+        searchInfoWindow1.open(mapGps);
 
+        _ViewportArr.push(mapGps);
 
+        setTimeout(function() {
+            map.setViewport(_ViewportArr);
+        }, 500);
 //        var infoWindow = new BMap.InfoWindow(sContent, opts); // 创建信息窗口对象
 //        map.openInfoWindow(infoWindow); // 打开信息窗口
 
 
         marker.addEventListener("click", function() {
-            searchInfoWindow1.open(new BMap.Point(115.880245, 40.150255));
+            searchInfoWindow1.open(mapGps);
 
 //            this.openInfoWindow(infoWindow);
             //图片加载完毕重绘infowindow
