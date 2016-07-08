@@ -34,7 +34,9 @@
 		<section class="referrer">
 			<h2>线路推荐人</h2>
 			<div>
-				<img src="{%=repPath(idl.referrer.img_url,getQueryString('id'))%}" width="100%">
+				<a href="baidumap://map/marker?location=40.047669,116.313082&title=我的位置&content=百度奎科大厦&mode=driving&region=北京&waypoints=116.099213,39.956721|115.880245,40.150255"><img src="{%=repPath(idl.referrer.img_url,getQueryString('id'))%}" width="100%">
+				<!--<a href="{%=idl.referrer.bio%}"><img src="{%=repPath(idl.referrer.img_url,getQueryString('id'))%}" width="100%">-->
+				</a>
 				<p><strong>推荐人：{%=idl.referrer.name%}</strong></p>
 				<p>{%=idl.referrer.description%}</p>
 			</div>
