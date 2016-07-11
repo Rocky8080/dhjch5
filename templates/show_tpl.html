@@ -19,6 +19,7 @@
 			</div>
 		</section>
 		{%
+			document.title = idl.title;
 			if(idl.video_url != '' && idl.video_url != null){
 		%}
 		<section class="video">
@@ -54,11 +55,11 @@
 					idp = idl.photos[i];
 			%}
 				<h3>{%=idp.title%}</h3>
-				<div>
-					<p><strong>类型：</strong>{%=idp.type%}　　<strong>坐标：</strong>{%=idp.location%}</p>
-					<p><strong>区域：</strong>{%=idp.area%}</p>
-					<p>{%=idp.description%}</p>
-				</div>
+				<!--<div>-->
+					<!--<p><strong>类型：</strong>{%=idp.type%}　　<strong>坐标：</strong>{%=idp.location%}</p>-->
+					<!--<p><strong>区域：</strong>{%=idp.area%}</p>-->
+					<!--<p>{%=idp.description%}</p>-->
+				<!--</div>-->
 				<div class="oh">
 					<!--<a class="showSceneryBtn" href="javascript:void(0);" rel-group="{%=i%}"><img src="{%=repPath(it.data[0].photos[i].images[0],getQueryString('id')) %}" width="100%"></a>-->
 					{% for (var j = 0; j < it.data[0].photos[i].images.length; j++) { %}
