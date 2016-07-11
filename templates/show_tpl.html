@@ -2,6 +2,7 @@
 	if(it.success){
 		if(it.data.length>0){
 			var idl = it.data[0];
+			document.title = idl.title;
 %}
 	<header>
 			<h1>{%=idl.title%}</h1>
@@ -19,7 +20,6 @@
 			</div>
 		</section>
 		{%
-			document.title = idl.title;
 			if(idl.video_url != '' && idl.video_url != null){
 		%}
 		<section class="video">
