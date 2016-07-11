@@ -31,7 +31,8 @@
         background-color: rgba(16, 114, 239, 0.8);
     }
     </style>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a&v=1.0"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
     <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
     <script src="../skins/js/function.js"></script> 
@@ -54,9 +55,9 @@ var mapGps = toBPoint(mapLoction);
 
 var map = new BMap.Map("allmap");
 map.centerAndZoom(new BMap.Point(115.880245, 40.150255), 100);
-map.addControl(new BMap.NavigationControl()); // 添加平移缩放控件
-map.addControl(new BMap.ScaleControl()); // 添加比例尺控件
-map.addControl(new BMap.OverviewMapControl()); //添加缩略地图控件
+//map.addControl(new BMap.NavigationControl()); // 添加平移缩放控件
+//map.addControl(new BMap.ScaleControl()); // 添加比例尺控件
+//map.addControl(new BMap.OverviewMapControl()); //添加缩略地图控件
 
 
 //循环出坐标线路
@@ -144,7 +145,7 @@ window.onload = function() {
             ]
         });
 
-        searchInfoWindow1.open(mapGps);
+//        searchInfoWindow1.open(mapGps);
 
         _ViewportArr.push(mapGps);
 
@@ -154,10 +155,26 @@ window.onload = function() {
 //        var infoWindow = new BMap.InfoWindow(sContent, opts); // 创建信息窗口对象
 //        map.openInfoWindow(infoWindow); // 打开信息窗口
 
-
         marker.addEventListener("click", function() {
-            searchInfoWindow1.open(mapGps);
+//            searchInfoWindow1.open(mapGps);
 
+
+//            var start = {
+//                latlng:mapGps
+//            }
+//            var end = {
+//                latlng:mapGps
+//            }
+//            var opts = {
+//                mode:BMAP_MODE_DRIVING,//公交、驾车、导航均修改该参数
+//                region:"北京"
+//            }
+//            var ss = new BMap.RouteSearch();
+//            ss.routeCall(start,end,opts);
+
+//            window.location = "http://api.map.baidu.com/direction?origin=latlng:34.264642646862,108.95108518068|name:我家&destination=" + mapLoction + "&mode=driving&output=html";
+
+            window.location = "http://api.map.baidu.com/marker?output=html&title=目的地&from=place&vt=map&traffic=off&evtson=off&qt=nav&location=" + mapGps.lat + "," + mapGps.lng;
 //            this.openInfoWindow(infoWindow);
             //图片加载完毕重绘infowindow
 //            document.getElementById('imgDemo').onload = function() {
