@@ -8,6 +8,7 @@
 			<p>{%=idl.create_time%}</p>
 			<aside>{%=idl.summary%}</aside>
 		</header>
+		<img src="../skins/images/top.jpg" width="100%"/>
 		<section class="mainRoute">
 			<h2>线路总览</h2>
 			<div>
@@ -22,10 +23,14 @@
 		%}
 		<section class="video">
 			<div>
-				<video width="100%" height="auto" controls>
-				  <source src="{%=repPath(idl.video_url,getQueryString('id'))%}" type="video/mp4">
-				   Your browser does'nt support video embedding feature.
-				</video>
+				<!--<video width="100%" height="auto" controls>-->
+				  <!--<source src="http://static.video.qq.com/TPout.swf?vid=d0309j1raz2&auto=1&outhost=http://cf.qq.com/" type="video/mp4">-->
+				  <!--&lt;!&ndash;<source src="{%=repPath(idl.video_url,getQueryString('id'))%}" type="video/mp4">&ndash;&gt;-->
+				   <!--Your browser does'nt support video embedding feature.-->
+				<!--</video>-->
+				<!--<embed src="http://static.video.qq.com/TPout.swf?vid=d0309j1raz2&auto=1&outhost=http://cf.qq.com/" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>-->
+				<!--http://v.qq.com/iframe/player.html?vid=d0309j1raz2&auto=0-->
+				<iframe class="video_iframe" style="z-index:1;" src="{%=idl.video_url%}" allowfullscreen="" frameborder="0" height="260" width="100%"></iframe>
 			</div>
 		</section>
 		{%
@@ -55,15 +60,21 @@
 					<p>{%=idp.description%}</p>
 				</div>
 				<div class="oh">
-					<a class="showSceneryBtn" href="javascript:void(0);" rel-group="{%=i%}"><img src="{%=repPath(it.data[0].photos[i].images[0],getQueryString('id')) %}" width="100%"></a>
-				</div>			
+					<!--<a class="showSceneryBtn" href="javascript:void(0);" rel-group="{%=i%}"><img src="{%=repPath(it.data[0].photos[i].images[0],getQueryString('id')) %}" width="100%"></a>-->
+					{% for (var j = 0; j < it.data[0].photos[i].images.length; j++) { %}
+					<img src="{%=repPath(it.data[0].photos[i].images[j],getQueryString('id')) %}" width="100%">
+					{% }
+					%}
+					<a href="map.html?routes={%=setLocationFun(idl.locationAll)%}&amp;location={%=idp.location%}"><img src="../skins/images/route.jpg" width="100%"/></a>
+				</div>
+
 			{%
 				}
 			%}
             </section>
 		</div>
 		<p>关注大话机车！关注骑行生活！（欢迎转载，请注明出处！）</p>
-		<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/C8bxpDvMMKmZhiafVlAGEHq2uATBDD3GhKdq1fRiaK3e2ibMyGPtqibKVkRNbqw8tUUEuyGw1iaufdGbsph8P60EuvQ/0?wx_fmt=jpeg" data-ratio="0.4712230215827338" data-w="" src="http://mmbiz.qpic.cn/mmbiz/C8bxpDvMMKmZhiafVlAGEHq2uATBDD3GhKdq1fRiaK3e2ibMyGPtqibKVkRNbqw8tUUEuyGw1iaufdGbsph8P60EuvQ/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" style="width: auto !important; visibility: visible !important; height: auto !important;">
+		<img src="../skins/images/bottom.jpg" width="100%"/>
 {%
 		}else{
 %}
