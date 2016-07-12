@@ -17,6 +17,7 @@
 				<img src="{%=repPath(idl.main_route.img_url,getQueryString('id'))%}" width="100%" >
 				</a>
 				<p>{%=idl.main_route.description%}</p>
+				<img src="../skins/images/fullmap_btn.png" width="100%"/>
 			</div>
 		</section>
 		{%
@@ -40,7 +41,8 @@
 		<section class="referrer">
 			<h2>线路推荐人</h2>
 			<div>
-				<a href="baidumap://map/marker?location=40.047669,116.313082&title=我的位置&content=百度奎科大厦&mode=driving&region=北京&waypoints=116.099213,39.956721|115.880245,40.150255"><img src="{%=repPath(idl.referrer.img_url,getQueryString('id'))%}" width="100%">
+				<!--<a href="baidumap://map/marker?location=40.047669,116.313082&title=我的位置&content=百度奎科大厦&mode=driving&region=北京&waypoints=116.099213,39.956721|115.880245,40.150255">-->
+				<img src="{%=repPath(idl.referrer.img_url,getQueryString('id'))%}" width="100%">
 				<!--<a href="{%=idl.referrer.bio%}"><img src="{%=repPath(idl.referrer.img_url,getQueryString('id'))%}" width="100%">-->
 				</a>
 				<p><strong>推荐人：{%=idl.referrer.name%}</strong></p>
@@ -55,19 +57,26 @@
 				for(var i = 0,len = idl.photos.length; i < len; i++){
 					idp = idl.photos[i];
 			%}
+				{% if ( idp.title != null) { %}
 				 <h3><img src="../skins/images/{%=idl.photos[i].type%}.jpg">{%=idp.title%}</h3>
+				{% } %}
 				<!--<div>-->
 					<!--<p><strong>类型：</strong>{%=idp.type%}　　<strong>坐标：</strong>{%=idp.location%}</p>-->
 					<!--<p><strong>区域：</strong>{%=idp.area%}</p>-->
-					<!--<p>{%=idp.description%}</p>-->
+				{% if ( idp.description != null) { %}
+
+				<p>{%=idp.description%}</p>
+				{% } %}
 				<!--</div>-->
 				<div class="oh">
 					<!--<a class="showSceneryBtn" href="javascript:void(0);" rel-group="{%=i%}"><img src="{%=repPath(it.data[0].photos[i].images[0],getQueryString('id')) %}" width="100%"></a>-->
 					{% for (var j = 0; j < it.data[0].photos[i].images.length; j++) { %}
 					<img src="{%=repPath(it.data[0].photos[i].images[j],getQueryString('id')) %}" width="100%">
-					{% }
-					%}
-					<a href="map.html?routes={%=setLocationFun(idl.locationAll)%}&amp;location={%=idp.location%}"><img src="../skins/images/route.jpg" width="100%"/></a>
+					{% }%}
+
+					{% if (idp.location != null) { %}
+						<a href="map.html?routes={%=setLocationFun(idl.locationAll)%}&amp;location={%=idp.location%}"><img src="../skins/images/route_btn.jpg" width="100%"/></a>
+					{% } %}
 				</div>
 
 			{%

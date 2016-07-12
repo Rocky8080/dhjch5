@@ -63,17 +63,14 @@
 					"type":"curve",
 					"area":"",
 					"description":"G109总体路段比较平缓，急弯不是太多，总体较为平缓，但大货车较多，汽车的车速也非常快，千万注意对向车辆！",
-					"location":[115.123,40.14141],
 					"images":["../tempData/@/tempFile/hotspot_4_1.jpg"],
 					/*"description":"这是一条对摩托车新手较为适合的山道，同时可以享受美食，这样的摩旅生活才有滋有味！！"*/
 				},
 				{
 
-					"title":"精彩瞬间",
 					"type":"landscape",
 					"area":"",
-					"description":"",
-					"location":[119.123,40.14141],
+					"description":"G109总体路段比较平缓，急弯不是太多，总体较为平缓，但大货车较多，汽车的车速也非常快，千万注意对向车辆！",
 					"images":["../tempData/@/tempFile/hotspot_5_1.jpg","../tempData/@/tempFile/hotspot_5_2.jpg","../tempData/@/tempFile/hotspot_5_3.jpg","../tempData/@/tempFile/hotspot_5_4.jpg","../tempData/@/tempFile/hotspot_5_5.jpg"]
 				}
 			]
