@@ -30,16 +30,27 @@
         text-decoration: none;
         background-color: rgba(16, 114, 239, 0.8);
     }
+
+    .baidumap {
+        position: fixed;
+        bottom: 1rem;
+        right: 0.5rem;
+        display: block;
+        z-index: 1000;
+    }
     </style>
     <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a&v=1.0"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
     <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
-    <script src="../skins/js/function.js"></script> 
+    <script src="../skins/js/function.js"></script>
+    <script src="../skins/js/jquery-2.1.1.min.js"></script>
+
 </head>
 
 <body>
     <a class="back" href="javascript:history.go(-1);location.reload();">&lt;&lt; 返回</a>
+    <a id="baidumap" class="baidumap" ><img src="../skins/images/mapIcon.png" width="60%"></a>
     <div id="allmap"></div>
 </body>
 
@@ -156,7 +167,7 @@ window.onload = function() {
         }, 500);
 //        var infoWindow = new BMap.InfoWindow(sContent, opts); // 创建信息窗口对象
 //        map.openInfoWindow(infoWindow); // 打开信息窗口
-
+        $('#baidumap').attr('href',"http://api.map.baidu.com/marker?output=html&title=目的地&from=place&vt=map&traffic=off&evtson=off&qt=nav&location=" + mapGps.lat + "," + mapGps.lng);
         marker.addEventListener("click", function() {
 //            searchInfoWindow1.open(mapGps);
 
@@ -189,7 +200,7 @@ window.onload = function() {
 
 
 //
-//获取指定URL参数的值 
+//获取指定URL参数的值
 function getQueryString(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
     var r = window.location.search.substr(1).match(reg);
