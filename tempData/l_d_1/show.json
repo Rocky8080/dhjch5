@@ -23,7 +23,7 @@
 			"referrer":{
 				"name":"线路总览",
 				"description":"",
-				"img_url":"../tempData/@/tempFile/explorer_gps.jpg",
+				"img_url":"../tempData/@/tempFile/explorer.jpg",
 				"bio":"https://mp.weixin.qq.com/s?__biz=MzI0OTE2MzIyOA==&tempkey=IqJnaqqjGUGfwRBJ8x2v0FXEeNZsePDoNzSr1C6QeubHorcy7c%2Fy%2B0RJuF036vYSr6M%2Fvl7t4gh8nyfBQ6YZsdFX96b%2FQd1FZ6GT6w8p6JHtE0iUD3T1sRnpq2EU%2BTi%2Bg88rujEn6DU7xudJXIGQoA%3D%3D&scene=0&previewkey=MdrbJjFTSCwdUTdwjSSqncNS9bJajjJKzz/0By7ITJA=&key=77421cf58af4a65314e1045af26b00ce9acfc4c9f4584f4fc073223f3619fa6fab301b2d424b5d9c936078cf5f79e3a6&ascene=0&uin=MjA1ODQ5ODM2MQ%3D%3D&devicetype=iMac+MacBook8%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=t6xzJRBAIMWTw4hZAOFhZ4pwd4s6KdsPF2PHsj0xS0dwSWnkqw6yDP%2BL8j2zp2Lg"
 			},
 
@@ -52,14 +52,14 @@
 					"type":"landscape",
 					"area":"",
 					"location":[111.123,40.14141],
-					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg.jpg"],
+					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg"],
 
 					"description":"作为本次摩旅行程（吃饭为主，哈哈），虽G109还有很多景点，例如珍珠湖、妙峰山等等，但需要徒步，不太适合，而且时间比较紧张，本次线路就不过多介绍景点了。",
 
 				},
 				{
 
-					"title":"路况介绍",
+//					"title":"路况介绍",
 					"type":"curve",
 					"area":"",
 					"description":"G109总体路段比较平缓，急弯不是太多，总体较为平缓，但大货车较多，汽车的车速也非常快，千万注意对向车辆！",

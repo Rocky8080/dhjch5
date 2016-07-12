@@ -13,11 +13,13 @@
 		<section class="mainRoute">
 			<h2>线路总览</h2>
 			<div>
-				<a href='../views/map.html?routes={%=setLocationFun(idl.locationAll)%}'>
+
 				<img src="{%=repPath(idl.main_route.img_url,getQueryString('id'))%}" width="100%" >
-				</a>
 				<p>{%=idl.main_route.description%}</p>
-				<img src="../skins/images/fullmap_btn.png" width="100%"/>
+				<a href='../views/map.html?routes={%=setLocationFun(idl.locationAll)%}'>
+					<img src="../skins/images/fullmap_btn.png" width="100%"/>
+				</a>
+
 			</div>
 		</section>
 		{%
@@ -47,7 +49,7 @@
 				</a>
 				<p><strong>推荐人：{%=idl.referrer.name%}</strong></p>
 				<p>{%=idl.referrer.description%}</p>
-				<a href="{%=idl.referrer.bio%}"><img src="../skins/images/bio.jpg" width="100%"/></a>
+				<a href="{%=idl.referrer.bio%}"><img src="../skins/images/bio_btn.jpg" width="100%"/></a>
 			</div>
 		</section>
 		<div class="scenery">
