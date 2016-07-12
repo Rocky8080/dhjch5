@@ -75,8 +75,8 @@ map.addControl(new BMap.OverviewMapControl()); //添加缩略地图控件
 var myP = [];
 var _point = [];
 var _ViewportArr = [];
-for (var i = 1, len = (mapJson.length + 1); i < len; i++) {
-    _point = mapJson[i - 1].split(',');
+for (var i = 0, len = (mapJson.length ); i < len; i++) {
+    _point = mapJson[i].split(',');
     myP[i] = new BMap.Point(_point[0], _point[1]);
 }
 
@@ -99,10 +99,12 @@ window.onload = function() {
     //    driving.search(myP2, myP3);                 //第二个驾车搜索
 
     //绘线
-    for (var i = 1, len = mapJson.length; i < len; i++) {
+    for (var i = 0, len = mapJson.length - 1; i < len; i++) {
         driving.search(myP[i], myP[(i + 1)]);
         _ViewportArr.push(myP[i]);
     }
+    _ViewportArr.push(myP[mapJson.length-1]);
+
 
 
     /*  driving.search(myP1, myP2);
