@@ -66,15 +66,16 @@
 					<!--<p><strong>类型：</strong>{%=idp.type%}　　<strong>坐标：</strong>{%=idp.location%}</p>-->
 					<!--<p><strong>区域：</strong>{%=idp.area%}</p>-->
 				{% if ( idp.description != null) { %}
-
-				<p>{%=idp.description%}</p>
+					<p>{%=idp.description%}</p>
 				{% } %}
 				<!--</div>-->
 				<div class="oh">
 					<!--<a class="showSceneryBtn" href="javascript:void(0);" rel-group="{%=i%}"><img src="{%=repPath(it.data[0].photos[i].images[0],getQueryString('id')) %}" width="100%"></a>-->
-					{% for (var j = 0; j < it.data[0].photos[i].images.length; j++) { %}
-					<img src="{%=repPath(it.data[0].photos[i].images[j],getQueryString('id')) %}" width="100%">
-					{% }%}
+					{% if ( it.data[0].photos[i].images[0] != "" ) {%}
+					{% for (var j = 0;  j < it.data[0].photos[i].images.length ; j++) { %}
+						<!---->
+						<img src="{%=repPath(it.data[0].photos[i].images[j],getQueryString('id')) %}" width="100%">
+					{% }}%}
 
 					{% if (idp.location != null) { %}
 						<a href="map.html?routes={%=setLocationFun(idl.locationAll)%}&amp;location={%=idp.location%}"><img src="../skins/images/route_btn.jpg" width="100%"/></a>
