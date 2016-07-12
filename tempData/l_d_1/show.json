@@ -15,10 +15,9 @@
 				"description":"如果说跑山是摩友必然的乐趣，那么跑山加美食那就更是必须的！京城西行著名的跑山线路国道G109，深处藏着一家好吃的饭庄【百花人家】，单程去约85公里，上午跑山中午刚好到达这个地方吃饭，饭庄就在G109路边，环境优美，豆腐宴好吃不贵！"
 			},
 			"locationAll":[
-				{"l":[116.099213,39.956721]},
-				{"l":[115.880245,40.150255]},
-				{"l":[115.661464,39.684585]},
-				{"l":[116.134123,39.888576]}
+				{"l":[115.632809,39.949316]},
+				{"l":[115.836075,40.018933]},
+				{"l":[116.218792,39.930354]}
 			],
 			"referrer":{
 				"name":"韵哲",
@@ -32,7 +31,7 @@
 					"type":"dining",
 					"area":"",
 					"description":"",
-					"location":[116.123,40.14141],
+					"location":[115.632809,39.949316],
 					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg","../tempData/@/tempFile/hotspot_1_3.jpg"]
 				},
 				{
@@ -40,14 +39,14 @@
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[113.123,40.14141],
+					"location":[115.665571,39.966997],
 					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg"]
 				},
 				{
 					"title":"爨底下村是门头沟有名的古镇，值得探访！",
 					"type":"landscape",
 					"area":"",
-					"location":[111.123,40.14141],
+					"location":[115.652568,40.001061],
 					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg"],
 					"description":"作为本次摩旅行程（吃饭为主，哈哈），虽G109还有很多景点，例如珍珠湖、妙峰山等等，但需要徒步，不太适合，而且时间比较紧张，本次线路就不过多介绍景点了。"
 
