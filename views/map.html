@@ -68,7 +68,12 @@ if (mapGps == null){
 
 var map = new BMap.Map("allmap");
 map.centerAndZoom(new BMap.Point(115.880245, 40.150255), 100);
-map.addControl(new BMap.NavigationControl({offset: new BMap.Size(30, 100)})); // 添加平移缩放控件
+if (mapGps == null){
+    map.addControl(new BMap.NavigationControl({offset: new BMap.Size(30, 30)})); // 添加平移缩放控件
+
+} else {
+    map.addControl(new BMap.NavigationControl({offset: new BMap.Size(30, 100)})); // 添加平移缩放控件
+}
 map.addControl(new BMap.ScaleControl()); // 添加比例尺控件
 map.addControl(new BMap.OverviewMapControl({isOpen:true,anchor:BMAP_ANCHOR_BOTTOM_LEFT})); //添加缩略地图控件
 //{isOpen:true,anchor:BMAP_ANCHOR_BOTTOM_LEFT}
