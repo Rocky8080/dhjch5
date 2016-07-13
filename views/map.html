@@ -62,7 +62,9 @@ if (getQueryString('routes') != null)
     mapJson = getQueryString('routes').split('|');
 var mapLoction = getQueryString('location');
 var mapGps = toBPoint(mapLoction);
-
+if (mapGps == null){
+    $('#baidumap').hide();
+}
 
 var map = new BMap.Map("allmap");
 map.centerAndZoom(new BMap.Point(115.880245, 40.150255), 100);
