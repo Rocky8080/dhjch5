@@ -34,7 +34,7 @@
     .baidumap {
         position: fixed;
         bottom: 1rem;
-        left: 0.5rem;
+        right: -1.8rem;
         display: block;
         z-index: 1000;
     }
@@ -50,7 +50,7 @@
 
 <body>
     <a class="back" href="javascript:history.go(-1);">&lt;&lt; 返回</a>
-    <a id="baidumap" class="baidumap" ><img src="../skins/images/mapIcon.png" width="60%"></a>
+    <a id="baidumap" class="baidumap" ><img src="../skins/images/mapIcon.jpg" width="60%"></a>
     <div id="allmap"></div>
 </body>
 
@@ -66,10 +66,10 @@ var mapGps = toBPoint(mapLoction);
 
 var map = new BMap.Map("allmap");
 map.centerAndZoom(new BMap.Point(115.880245, 40.150255), 100);
-map.addControl(new BMap.NavigationControl()); // 添加平移缩放控件
+map.addControl(new BMap.NavigationControl({offset: new BMap.Size(30, 100)})); // 添加平移缩放控件
 map.addControl(new BMap.ScaleControl()); // 添加比例尺控件
-map.addControl(new BMap.OverviewMapControl()); //添加缩略地图控件
-
+map.addControl(new BMap.OverviewMapControl({isOpen:true,anchor:BMAP_ANCHOR_BOTTOM_LEFT})); //添加缩略地图控件
+//{isOpen:true,anchor:BMAP_ANCHOR_BOTTOM_LEFT}
 
 //循环出坐标线路
 var myP = [];
