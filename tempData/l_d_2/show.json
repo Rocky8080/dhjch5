@@ -1,0 +1,76 @@
+{
+    "success":true,
+    "records":160,
+    "page": 5,
+    "total": 12,
+    "data":[
+		{
+			"title":"路书:一起去看北京的夜",
+			"summary":"",
+			"img_url":"../tempData/@/tempFile/Propaganda_1.png",
+			"create_time":"2016/06",
+			"video_url":"http://v.qq.com/iframe/player.html?vid=d0309j1raz2&tiny=0&auto=0",
+			"main_route": {
+				"img_url":"../tempData/@/tempFile/main.jpg",
+				"description":"一说夜北京马上想到的是三里屯，灯红酒绿美女如云！咱骑个摩托车上那儿去凑热闹一点儿也显不出来了。咱得来点儿小清新，大美北京啊，而且吧上这儿来看夜北京多贵的豪车到这都得歇菜，只能下车老老实实腿儿半个小时吧，只有咱摩托车一路登顶！"
+			},
+			"locationAll":[
+				{"l":[116.191751,39.983793]},
+				{"l":[116.167429,39.93137]},
+				{"l":[116.22352,39.930291]},
+			],
+			"referrer":{
+				"name":"",
+				"description":" ",
+				"img_url":"../tempData/@/tempFile/explorer.jpg",
+				"bio":"http://mp.weixin.qq.com/s?__biz=MzI0OTE2MzIyOA==&mid=511027880&idx=1&sn=a5a4f939c8a8583c7767e6be3d375363&scene=19#wechat_redirect"
+			},
+			"photos":[
+				{
+					"title":"正经说，天气好的时候大北京的夜景好美，只有几个字形容了：北京好大啊！",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					//"location":[115.632809,39.949316],
+					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg"]
+				},
+				{
+					"title":"景观点：鬼笑石",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.191751,39.983793],
+					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_2_2.jpg"]
+				},
+				{
+					"title":"特别提示",
+					"type":"curve",
+					"area":"",
+					"description":"防火道栏杆，上面说了豪车到这里就歇菜，对就是因为离鬼笑石还有步行20-30分钟路程的地方，被栏杆挡住了，开车来的朋友只能停在这里徒步上去，因为山路上没有灯，所以徒步有点危险！",
+					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg"]
+
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"咱摩托车的优势来啦，可以从小道上去，但是各位摩友还是要特别小心，从这里往上走的路不宽、没有护栏、也没有路灯，弯道和坡道较大，而这时路上已经能看到北京全景了，大家千万不要分神，注意安全！！"
+				},
+				{
+					"title":"注意安全",
+					"type":"curve",
+					"area":"",
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_4_1.jpg","../tempData/@/tempFile/hotspot_4_2.jpg"]
+				},
+				{
+					"title":"欣赏北京之大夜景再喝点茶，太惬意了！",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_5_1.jpg"]
+				}				
+			]
+		}
+	]
+}
