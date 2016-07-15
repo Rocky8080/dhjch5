@@ -43,7 +43,8 @@
 	font-size: 1.2rem;
 	display: inline-table;
 	color: #666;
-
+	text-overflow:ellipsis;
+	margin-bottom:15px;
 	height: 3.2rem;
 	line-height: 135%;
 	margin-top: 0.3rem;
