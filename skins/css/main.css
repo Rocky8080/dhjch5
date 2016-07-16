@@ -40,7 +40,7 @@
 }
 .listLS dd {
 	padding-left: 1.2rem;
-	font-size: 1.2rem;
+	font-size: small;
 	display: inline-table;
 	color: #666;
 	text-overflow:ellipsis;
@@ -51,6 +51,7 @@
 	overflow: hidden;
 }
 .listLS span.lb {
+	font-size:small;
 	position: absolute;
 	bottom: 1rem;
 	color: #ccc;
