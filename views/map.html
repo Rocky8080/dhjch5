@@ -113,6 +113,16 @@ window.onload = function() {
     _ViewportArr.push(myP[mapJson.length-1]);
 
 
+    // 绘制 开始,结束点
+    var startLoc = _ViewportArr[0];
+    var endLoc = _ViewportArr[_ViewportArr.length - 1];
+    var routeStart = new BMap.Icon("../skins/images/route_start.png", new BMap.Size(38,60));
+    var routeEnd = new BMap.Icon("../skins/images/route_end.png", new BMap.Size(38,60));
+
+    var startMarker = new BMap.Marker(startLoc,{icon:routeStart,width:'50%'});
+    var endMarker = new BMap.Marker(endLoc,{icon:routeEnd});
+//    map.addOverlay(startMarker);
+//    map.addOverlay(endMarker);
 
     /*  driving.search(myP1, myP2);
       driving.search(myP2, myP3);
@@ -141,33 +151,8 @@ window.onload = function() {
 
     /*信息窗口*/
     if(mapLoction != null && mapLoction != 'undefined' && mapLoction != ''){
-        var sContent = "location: " + mapLoction;
         var marker = new BMap.Marker(mapGps); // 创建标注
         map.addOverlay(marker);
-
-        var opts = {
-            width: 0, // 信息窗口宽度
-            height: 0 // 信息窗口高度
-        }
-
-        var sContent =
-                "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>天安门</h4>" +
-                "<img style='margin:4px' id='imgDemo' src='http://app.baidu.com/map/images/tiananmen.jpg' width='139' height='104' title='天安门'/>" +
-                "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>天安门坐落在中国北京市中心,故宫的南侧,与天安门广场隔长安街相望,是清朝皇城的大门...</p>" +
-                "</div>";
-
-
-        var searchInfoWindow1 = new BMapLib.SearchInfoWindow(map, "地址导航", {
-//            title: "地址导航", //标题
-            panel : "panel", //检索结果面板
-            enableAutoPan : true, //自动平移
-            searchTypes :[
-                BMAPLIB_TAB_TO_HERE,   //周边检索
-                BMAPLIB_TAB_FROM_HERE //从这里出发
-            ]
-        });
-
-//        searchInfoWindow1.open(mapGps);
 
         _ViewportArr.push(mapGps);
 
@@ -176,7 +161,8 @@ window.onload = function() {
         }, 500);
 //        var infoWindow = new BMap.InfoWindow(sContent, opts); // 创建信息窗口对象
 //        map.openInfoWindow(infoWindow); // 打开信息窗口
-        $('#baidumap').attr('href',"http://api.map.baidu.com/marker?output=html&title=目的地&from=place&vt=map&traffic=off&evtson=off&qt=nav&location=" + mapGps.lat + "," + mapGps.lng);
+        var redirectMap = "http://api.map.baidu.com/marker?output=html&title=目的地&from=place&vt=map&traffic=off&evtson=off&qt=nav&location=" + mapGps.lat + "," + mapGps.lng;
+        $('#baidumap').attr('href',"baidumap://map/geocoder?location=39.990912172420714,116.32715863448607");
         marker.addEventListener("click", function() {
 //            searchInfoWindow1.open(mapGps);
 
@@ -196,7 +182,8 @@ window.onload = function() {
 
 //            window.location = "http://api.map.baidu.com/direction?origin=latlng:34.264642646862,108.95108518068|name:我家&destination=" + mapLoction + "&mode=driving&output=html";
 
-            window.location = "http://api.map.baidu.com/marker?output=html&title=目的地&from=place&vt=map&traffic=off&evtson=off&qt=nav&location=" + mapGps.lat + "," + mapGps.lng;
+            window.location = "baidumap://map/marker?location=40.047669,116.313082";
+//                    "http://api.map.baidu.com/marker?output=html&title=目的地&from=place&vt=map&traffic=off&evtson=off&qt=nav&location=" + mapGps.lat + "," + mapGps.lng;
 //            this.openInfoWindow(infoWindow);
             //图片加载完毕重绘infowindow
 //            document.getElementById('imgDemo').onload = function() {
