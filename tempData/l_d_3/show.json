@@ -1,0 +1,126 @@
+{
+    "success":true,
+    "records":160,
+    "page": 5,
+    "total": 12,
+    "data":[
+		{
+			"title":"路书：京北激情风景线",
+			"summary":"",
+			"img_url":"../tempData/@/tempFile/Propaganda_1.png",
+			"create_time":"2016/05",
+			"video_url":"http://v.qq.com/iframe/player.html?vid=d0301gqgllx&tiny=0&auto=0",
+			"main_route": {
+				"img_url":"../tempData/@/tempFile/main.jpg",
+				"description":""
+			},
+			"locationAll":[
+				{"l":[116.537558,40.247976]},
+				{"l":[116.34881,40.336134]},
+				{"l":[116.368932,40.379348]},
+				{"l":[116.339677,40.438605]},
+				{"l":[116.367399,40.486663]},
+				{"l":[116.418802,40.535472]},
+				{"l":[116.300199,40.556658]},	
+				{"l":[116.128263,40.608]},
+				{"l":[116.266063,40.39087]},
+				{"l":[116.221013,40.243439]},				
+			],
+			"referrer":{
+				"name":"",
+				"description":" ",
+				"img_url":"../tempData/@/tempFile/explorer.jpg",
+				"bio":"http://mp.weixin.qq.com/s?__biz=MzI0OTE2MzIyOA==&mid=511027880&idx=1&sn=a5a4f939c8a8583c7767e6be3d375363&scene=19#wechat_redirect"
+			},
+			"photos":[
+				{
+					"title":"起点 天北路与怀昌路交叉口",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.537558,40.247976],
+					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg","../tempData/@/tempFile/hotspot_1_3.jpg"]
+				},
+				{
+					"title":"安四路乌龟山休息平台",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.34881,40.336134],
+					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_2_2.jpg"]
+				},
+				{
+					"title":"午餐时间到啦 泉水渔家",
+					"type":"dining",
+					"area":"",
+					"description":"",
+					"location":[116.368932,40.379348],
+					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg"]
+				},	
+				{
+					"title":"机车主题餐吧",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.339677,40.438605],
+					"images":["../tempData/@/tempFile/hotspot_4_1.jpg"]
+				},	
+				{
+					"title":"安四路弯道密集区",
+					"type":"curve",
+					"area":"",
+					"description":"",
+					"location":[116.367399,40.486663],
+					"images":["../tempData/@/tempFile/hotspot_5_1.jpg","../tempData/@/tempFile/hotspot_5_2.jpg","../tempData/@/tempFile/hotspot_5_3.jpg"]
+				},	
+				{
+					"title":"四海镇广场",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.418802,40.535472],
+					"images":["../tempData/@/tempFile/hotspot_6_1.jpg"]
+				},	
+				{
+					"title":"延琉路林荫道",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.300199,40.556658],
+					"images":["../tempData/@/tempFile/hotspot_7_1.jpg","../tempData/@/tempFile/hotspot_7_2.jpg","../tempData/@/tempFile/hotspot_7_3.jpg"]
+				},	
+				{
+					"title":"昌赤路防火道 折返点",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.128263,40.608],
+					"images":["../tempData/@/tempFile/hotspot_8_1.jpg"]
+				},	
+				{
+					"title":"昌赤路弯道密集区",
+					"type":"curve",
+					"area":"",
+					"description":"",
+					"location":[116.266063,40.39087],
+					"images":["../tempData/@/tempFile/hotspot_9_1.jpg","../tempData/@/tempFile/hotspot_9_2.jpg"]
+				},
+				{
+					"title":"终点 十三陵高速收费站",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.221013,40.243439],
+					"images":["../tempData/@/tempFile/hotspot_10_1.jpg"]
+				},				
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"线路总结：值得收藏的跑山线路 线路跨越顺义-昌平-延庆北京最美京北的三个区，线路景色优美，路面平整干净，摩托车、汽车，骑行自行车都是不错的线路。"
+				},
+		
+			]
+		}
+	]
+}

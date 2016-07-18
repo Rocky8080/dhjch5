@@ -26,7 +26,7 @@
 			},
 			"photos":[
 				{
-					"title":"先说说目的地-百花人家（清水镇店）",
+					"title":"先说说目的地-百花人家",
 					"type":"dining",
 					"area":"",
 					"description":"",
@@ -34,7 +34,7 @@
 					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg","../tempData/@/tempFile/hotspot_1_3.jpg"]
 				},
 				{
-					"title":"吃好了往回走不了多远就是斋堂水库",
+					"title":"离百花人家没多远就是斋堂水库",
 					"type":"landscape",
 					"area":"",
 					"description":"",
@@ -42,7 +42,7 @@
 					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_2_2.jpg"]
 				},
 				{
-					"title":"爨底下村是门头沟有名的古镇，值得探访！",
+					"title":"爨底下村是门头沟有名的古镇！",
 					"type":"landscape",
 					"area":"",
 					"location":[115.652568,40.001061],
