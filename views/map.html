@@ -217,12 +217,12 @@ window.onload = function() {
 
 //            window.location = "http://api.map.baidu.com/direction?origin=latlng:34.264642646862,108.95108518068|name:我家&destination=" + mapLoction + "&mode=driving&output=html";
             WeixinJSBridge.invoke("openLocation",{
-                       "latitude" : 40.047669, //纬度
-                           "longitude" : 116.313082, //经度
-                           "name" : "TIT创意园", //POI名称
-                           "address" : "广州市海珠区新港中路397号", //地址
-                           "scale" : 14, //地图缩放级别
-                           "infoUrl" : "http://weixin.qq.com/", //查看位置界面底部的超链接
+                       "latitude" : mapGps.lat, //纬度
+                           "longitude" : mapGps.lng, //经度
+//                           "name" : "TIT创意园", //POI名称
+//                           "address" : "广州市海珠区新港中路397号", //地址
+                           "scale" : 12, //地图缩放级别
+//                           "infoUrl" : "http://weixin.qq.com/", //查看位置界面底部的超链接
                            },
                    function(e){
                            alert(e.err_msg)
