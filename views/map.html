@@ -69,11 +69,11 @@
      * 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
      */
     wx.config({
-        debug: true,
+        debug: false,
         appId: 'wxa288ea63f4c9c3be',
-        nonceStr: 'id3kc9aspg7enqp',
-        timestamp: 1468857317,
-        signature: '787a473b131ae9b15d6ae983b91ee0663f615bee',
+        nonceStr: '0bba4t1qgmyc18u',
+        timestamp: 1468936456,
+        signature: 'ae1552fd6a4c1c27de911215504f61c32cb05c55',
         jsApiList: [
             'checkJsApi',
             'onMenuShareTimeline',
@@ -220,7 +220,7 @@ window.onload = function() {
             WeixinJSBridge.invoke("openLocation",{
                        "latitude" : mapGps.lat, //纬度
                            "longitude" : mapGps.lng, //经度
-//                           "name" : "TIT创意园", //POI名称
+                           "name" : title, //POI名称
 //                           "address" : "广州市海珠区新港中路397号", //地址
                            "scale" : 12, //地图缩放级别
 //                           "infoUrl" : "http://weixin.qq.com/", //查看位置界面底部的超链接
