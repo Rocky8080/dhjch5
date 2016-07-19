@@ -83,7 +83,7 @@
         ]
     });
     wx.checkJsApi({
-        jsApiList: ['openLocation'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+        jsApiList: ['openMapNavigateMenu'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
         success: function(res) {
             // 以键值对的形式返回，可用的api值true，不可用为false
             // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
@@ -216,7 +216,7 @@ window.onload = function() {
 //            ss.routeCall(start,end,opts);
 
 //            window.location = "http://api.map.baidu.com/direction?origin=latlng:34.264642646862,108.95108518068|name:我家&destination=" + mapLoction + "&mode=driving&output=html";
-            WeixinJSBridge.invoke("openLocation",{
+            WeixinJSBridge.invoke("openMapNavigateMenu",{
                        "latitude" : mapGps.lat, //纬度
                            "longitude" : mapGps.lng, //经度
                            "name" : title, //POI名称
