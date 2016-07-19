@@ -96,6 +96,7 @@ var mapJson = [];
 if (getQueryString('routes') != null)
     mapJson = getQueryString('routes').split('|');
 var mapLoction = getQueryString('location');
+var title = getQueryString('title');
 var mapGps = toBPoint(mapLoction);
 if (mapGps == null){
     $('#baidumap').hide();

@@ -16,7 +16,7 @@
 
 				<img src="{%=repPath(idl.main_route.img_url,getQueryString('id'))%}" width="100%" >
 				<p>{%=idl.main_route.description%}</p>
-				<a href='../views/map.html?routes={%=setLocationFun(idl.locationAll)%}'>
+				<a href='../views/map.html?title=线路总览&routes={%=setLocationFun(idl.locationAll)%}'>
 					<img src="../skins/images/fullmap_btn.png" width="100%"/>
 				</a>
 
@@ -78,7 +78,7 @@
 					{% }}%}
 
 					{% if (idp.location != null) { %}
-						<a href="map.html?routes={%=setLocationFun(idl.locationAll)%}&amp;location={%=idp.location%}"><img src="../skins/images/route_btn.jpg" width="100%"/></a>
+						<a href="map.html?title={%=idp.title%}&routes={%=setLocationFun(idl.locationAll)%}&amp;location={%=idp.location%}"><img src="../skins/images/route_btn.jpg" width="100%"/></a>
 					{% } %}
 				</div>
 
