@@ -82,9 +82,11 @@ function refresh_token(){
 
 /* GET home page. */
 router.get('/map.html', function(req, res) {
-    console.log('baseUrl : ' + req.url);
+    // console.log('url : ' + encodeURI(req.originalUrl));
+    // console.log('encode url : ' + encodeURI(req.originalUrl));
+    // console.log('decode url : ' + decodeURI(req.originalUrl));
     refresh_token();
-    var fullUrl = req.protocol + '://' + req.get('host') + decodeURI(req.originalUrl);
+    var fullUrl = req.protocol + '://' + req.get('host') + (req.originalUrl);
     console.log('full_url:' + fullUrl);
 
     var sign_params = sign(ticket, fullUrl);
