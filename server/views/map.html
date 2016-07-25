@@ -50,7 +50,7 @@
 
 <body>
     <a class="back" href="javascript:history.go(-1);">返回</a>
-    <a id="baidumap" class="baidumap" ><img src="skins/images/mapIcon.png" width="60%"></a>
+    <a id="baidumap" class="baidumap" href="javascript:openLocation();" ><img src="skins/images/mapIcon.png" width="60%"></a>
     <div id="allmap"></div>
 </body>
 
@@ -77,18 +77,17 @@
         jsApiList: [
             'checkJsApi',
             'onMenuShareTimeline',
-            'openMapNavigateMenu',
             'openLocation',
             'getLocation'
         ]
     });
-//    wx.checkJsApi({
-//        jsApiList: ['openLocation'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
-//        success: function(res) {
-//            // 以键值对的形式返回，可用的api值true，不可用为false
-//            // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
-//        }
-//    });
+    wx.checkJsApi({
+        jsApiList: ['openLocation'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+        success: function(res) {
+            // 以键值对的形式返回，可用的api值true，不可用为false
+            // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+        }
+    });
 
 //获取坐标系
 var mapJson = [];
@@ -197,8 +196,13 @@ window.onload = function() {
 //        var infoWindow = new BMap.InfoWindow(sContent, opts); // 创建信息窗口对象
 //        map.openInfoWindow(infoWindow); // 打开信息窗口
         var redirectMap = "http://api.map.baidu.com/marker?output=html&title=目的地&from=place&vt=map&traffic=off&evtson=off&qt=nav&location=" + mapGps.lat + "," + mapGps.lng;
-        $('#baidumap').attr('href',redirectMap);
-        marker.addEventListener("click", function() {
+//        $('#baidumap').attr('href',redirectMap);
+        marker.addEventListener("click", openLocation);
+    }
+    /*信息窗口 结束*/
+}
+
+function openLocation() {
 //            searchInfoWindow1.open(mapGps);
 
 
@@ -216,29 +220,25 @@ window.onload = function() {
 //            ss.routeCall(start,end,opts);
 
 //            window.location = "http://api.map.baidu.com/direction?origin=latlng:34.264642646862,108.95108518068|name:我家&destination=" + mapLoction + "&mode=driving&output=html";
-            WeixinJSBridge.invoke("openLocation",{
-                       "latitude" : mapGps.lat, //纬度
-                           "longitude" : mapGps.lng, //经度
-                           "name" : title, //POI名称
+        WeixinJSBridge.invoke("openLocation",{
+                    "latitude" : mapGps.lat, //纬度
+                    "longitude" : mapGps.lng, //经度
+                    "name" : title, //POI名称
 //                           "address" : "广州市海珠区新港中路397号", //地址
-                           "scale" : 12, //地图缩放级别
+                    "scale" : 12, //地图缩放级别
 //                           "infoUrl" : "http://weixin.qq.com/", //查看位置界面底部的超链接
-                           },
-                   function(e){
-                           alert(e.err_msg)
-                       })
+                },
+                function(e){
+                    alert(e.err_msg)
+                })
 //            window.location = "baidumap://map/marker?location=40.047669,116.313082";
 //                    "http://api.map.baidu.com/marker?output=html&title=目的地&from=place&vt=map&traffic=off&evtson=off&qt=nav&location=" + mapGps.lat + "," + mapGps.lng;
 //            this.openInfoWindow(infoWindow);
-            //图片加载完毕重绘infowindow
+        //图片加载完毕重绘infowindow
 //            document.getElementById('imgDemo').onload = function() {
 //                infoWindow.redraw(); //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
 //            }
-        });
     }
-    /*信息窗口 结束*/
-}
-
 
 //
 //获取指定URL参数的值
