@@ -52,7 +52,7 @@ function refresh_token(){
         ticket = reply;
         console.log('get ticket : ' + ticket);
 
-        if (ticket == "undefined" || ticket == null){
+        if (ticket == undefined || ticket == null){
             http.get("https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=" + token +"&type=jsapi", function(response) {
                 // Continuously update stream with data
                 var body = '';
