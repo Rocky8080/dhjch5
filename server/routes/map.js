@@ -40,7 +40,7 @@ function refresh_token(){
                     token = parsed.access_token
                     client.set('token', token, redis.print);
                     client.expire('token', 7200);
-                    console.log('set token' + token);
+                    console.log('set token : ' + token);
                 });
             }).on('error', function(e) {
                 console.log("Got error: " + e.message);
@@ -52,7 +52,7 @@ function refresh_token(){
             ticket = reply;
             console.log('get ticket : ' + ticket);
 
-            if (ticket == undefined || ticket == null){
+            if (ticket == 'undefined' || ticket == undefined || ticket == null){
                 http.get("https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=" + token +"&type=jsapi", function(response) {
                     // Continuously update stream with data
                     var body = '';
@@ -84,7 +84,7 @@ function refresh_token(){
 router.get('/map.html', function(req, res) {
     console.log('baseUrl : ' + req.url);
     refresh_token();
-    var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+    var fullUrl = req.protocol + '://' + req.get('host') + decodeURI(req.originalUrl);
     console.log('full_url:' + fullUrl);
 
     var sign_params = sign(ticket, fullUrl);
