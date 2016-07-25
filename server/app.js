@@ -74,6 +74,19 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+var port = 3000;
+if (process.argv.length <= 2) {
+  console.log("Usage: " + __filename + " SOME_PARAM");
+  app.listen(port, function () {
+    console.log('Example app listening on port ' + port);
+  });
+} else {
+  port = process.argv[2];
+  console.log('port:' + port);
+  app.listen(port, function () {
+    console.log('Example app listening on port ' + port);
+  });
+}
+
+var param = process.argv[2];
+
