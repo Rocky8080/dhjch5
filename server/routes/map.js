@@ -60,7 +60,7 @@ function refresh_token(){
                     body += d;
                 });
                 response.on('end', function() {
-
+                    console.log('ticket body : ' + body);
                     // Data reception is done, do whatever with it!
                     var parsed = JSON.parse(body);
                     ticket = parsed.ticket
