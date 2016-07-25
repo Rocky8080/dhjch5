@@ -43,14 +43,14 @@
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
     <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
-    <script src="../skins/js/function.js"></script>
-    <script src="../skins/js/jquery-2.1.1.min.js"></script>
+    <script src="skins/js/function.js"></script>
+    <script src="skins/js/jquery-2.1.1.min.js"></script>
     <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 </head>
 
 <body>
     <a class="back" href="javascript:history.go(-1);">返回</a>
-    <a id="baidumap" class="baidumap" ><img src="../skins/images/mapIcon.png" width="60%"></a>
+    <a id="baidumap" class="baidumap" ><img src="skins/images/mapIcon.png" width="60%"></a>
     <div id="allmap"></div>
 </body>
 
@@ -151,8 +151,8 @@ window.onload = function() {
     // 绘制 开始,结束点
     var startLoc = _ViewportArr[0];
     var endLoc = _ViewportArr[_ViewportArr.length - 1];
-    var routeStart = new BMap.Icon("../skins/images/route_start.png", new BMap.Size(38,60));
-    var routeEnd = new BMap.Icon("../skins/images/route_end.png", new BMap.Size(38,60));
+    var routeStart = new BMap.Icon("skins/images/route_start.png", new BMap.Size(38,60));
+    var routeEnd = new BMap.Icon("skins/images/route_end.png", new BMap.Size(38,60));
 
     var startMarker = new BMap.Marker(startLoc,{icon:routeStart,width:'50%'});
     var endMarker = new BMap.Marker(endLoc,{icon:routeEnd});
