@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 // var routes = require('./routes/index');
 var maps = require('./routes/map');
+var locto = require('./routes/locto');
 // var users = require('./routes/users');
 
 var app = express();
@@ -32,6 +33,7 @@ app.use(cookieParser());
 
 // app.use('/users', users);
 app.use('/', maps);
+app.use('/', locto);
 // app.use('/', routes);
 
 app.use('/skins', express.static('../skins'));

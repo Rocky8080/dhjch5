@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+    body,
+    html,
+    #allmap {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        font-family: "微软雅黑";
+    }
+    
+    .back {
+        color: white;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+        padding: 0 1rem;
+        height: 2.6rem;
+        line-height: 2.6rem;
+        text-align: center;
+        z-index: 1000;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        background-color: rgba(16, 114, 239, 0.8);
+    }
+
+    .baidumap {
+        position: fixed;
+        bottom: 1rem;
+        right: -1.8rem;
+        display: block;
+        z-index: 1000;
+    }
+    </style>
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a&v=1.0"></script>-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+    <script src="skins/js/function.js"></script>
+    <script src="skins/js/jquery-2.1.1.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script type="text/javascript">
+
+    /*
+     * 注意：
+     * 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
+     * 2. 如果发现在 Android 不能分享自定义内容，请到官网下载最新的包覆盖安装，Android 自定义分享接口需升级至 6.0.2.58 版本及以上。
+     * 3. 常见问题及完整 JS-SDK 文档地址：http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+     *
+     * 开发中遇到问题详见文档“附录5-常见错误及解决办法”解决，如仍未能解决可通过以下渠道反馈：
+     * 邮箱地址：weixin-open@qq.com
+     * 邮件主题：【微信JS-SDK反馈】具体问题
+     * 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
+     */
+    wx.config({
+        debug: false,
+        appId: '<%=appId %>',
+        nonceStr: '<%=nonceStr %>',
+        timestamp: '<%=timestamp %>',
+        signature: '<%=signature %>',
+        jsApiList: [
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'openLocation',
+            'getLocation'
+        ]
+    });
+    wx.checkJsApi({
+        jsApiList: ['openLocation'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+        success: function(res) {
+            // 以键值对的形式返回，可用的api值true，不可用为false
+            // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+        }
+    });
+
+//获取坐标系
+var title = getQueryString('title');
+var mapLoction = getQueryString('location');
+var mapGps = toBPoint(mapLoction);
+
+function toBPoint(gpsLocation){
+    if (gpsLocation == null || gpsLocation == "")
+        return null;
+    var _point = [];
+    _point = gpsLocation.split(',');
+    return new BMap.Point(_point[0], _point[1]);
+}
+
+WeixinJSBridge.invoke("openLocation",{
+            "latitude" : mapGps.lat, //纬度
+            "longitude" : mapGps.lng, //经度
+            "name" : decodeURI(title), //POI名称
+            "scale" : 12, //地图缩放级别
+        },
+        function(e){
+            alert(e.err_msg)
+        });
+
+window.onload = function() {
+
+}
+
+//
+//获取指定URL参数的值
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return (r[2]);
+    return null;
+}
+</script>
