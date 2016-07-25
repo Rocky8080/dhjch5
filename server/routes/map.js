@@ -46,33 +46,36 @@ function refresh_token(){
                 console.log("Got error: " + e.message);
             });
         }
+
+        // 初始化ticket
+        client.get('ticket', function(err, reply) {
+            ticket = reply;
+            console.log('get ticket : ' + ticket);
+
+            if (ticket == undefined || ticket == null){
+                http.get("https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=" + token +"&type=jsapi", function(response) {
+                    // Continuously update stream with data
+                    var body = '';
+                    response.on('data', function(d) {
+                        body += d;
+                    });
+                    response.on('end', function() {
+                        console.log('ticket body : ' + body);
+                        // Data reception is done, do whatever with it!
+                        var parsed = JSON.parse(body);
+                        ticket = parsed.ticket
+                        client.set('ticket', ticket, redis.print);
+                        client.expire('ticket', 7200);
+                        console.log('set ticket' + ticket);
+                    });
+                }).on('error', function(e) {
+                    console.log("Got error: " + e.message);
+                });
+            }
+        });
     });
 
-    client.get('ticket', function(err, reply) {
-        ticket = reply;
-        console.log('get ticket : ' + ticket);
 
-        if (ticket == undefined || ticket == null){
-            http.get("https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=" + token +"&type=jsapi", function(response) {
-                // Continuously update stream with data
-                var body = '';
-                response.on('data', function(d) {
-                    body += d;
-                });
-                response.on('end', function() {
-                    console.log('ticket body : ' + body);
-                    // Data reception is done, do whatever with it!
-                    var parsed = JSON.parse(body);
-                    ticket = parsed.ticket
-                    client.set('ticket', ticket, redis.print);
-                    client.expire('ticket', 7200);
-                    console.log('set ticket' + ticket);
-                });
-            }).on('error', function(e) {
-                console.log("Got error: " + e.message);
-            });
-        }
-    });
 
 
 }
