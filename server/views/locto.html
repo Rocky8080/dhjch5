@@ -40,18 +40,14 @@
     }
     </style>
     <!--<script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a&v=1.0"></script>-->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
-    <script src="skins/js/function.js"></script>
-    <script src="skins/js/jquery-2.1.1.min.js"></script>
-    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
 </head>
 
 <body>
-
-</body>
-
-</html>
-
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
+<script src="skins/js/function.js"></script>
+<script src="skins/js/jquery-2.1.1.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script type="text/javascript">
     window.onload = function() {
         openLocation();
@@ -92,26 +88,32 @@
     //获取坐标系
     var title = getQueryString('title');
     var mapLoction = getQueryString('location');
-//    var mapGps = toBPoint(mapLoction);
-//
-//    function toBPoint(gpsLocation){
-//        if (gpsLocation == null || gpsLocation == "")
-//            return null;
-//        var _point = [];
-//        _point = gpsLocation.split(',');
-//        return new BMap.Point(_point[0], _point[1]);
-//    }
+    var mapGps = toBPoint(mapLoction);
+
+    function toBPoint(gpsLocation){
+        if (gpsLocation == null || gpsLocation == "")
+            return null;
+        var _point = [];
+        _point = gpsLocation.split(',');
+        return new BMap.Point(_point[0], _point[1]);
+    }
 
     function openLocation() {
-        wx.invoke("openLocation",{
-                    "latitude" : mapGps.lat, //纬度
-                    "longitude" : mapGps.lng, //经度
-                    "name" : title, //POI名称
-                    "scale" : 12 //地图缩放级别
-                },
-                function(e){
-                    alert(e.err_msg)
-                })
+//        wx.invoke("openLocation",{
+//                    "latitude" : mapGps.lat, //纬度
+//                    "longitude" : mapGps.lng, //经度
+//                    "name" : title, //POI名称
+//                    "scale" : 12 //地图缩放级别
+//                },
+//                function(e){
+//                    alert(e.err_msg)
+//                })
+        wx.openLocation({
+            latitude: mapGps.lat,
+            longitude: mapGps.lng,
+            name: title,
+            scale: 12
+        });
     }
     //
     //获取指定URL参数的值
@@ -123,3 +125,6 @@
     }
 
 </script>
+</body>
+
+</html>
