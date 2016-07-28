@@ -53,7 +53,10 @@
 </html>
 
 <script type="text/javascript">
-
+    window.onload = function() {
+        openLocation();
+//        alert('abc');
+    }
     /*
      * 注意：
      * 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
@@ -89,23 +92,18 @@
     //获取坐标系
     var title = getQueryString('title');
     var mapLoction = getQueryString('location');
-    var mapGps = toBPoint(mapLoction);
-
-    function toBPoint(gpsLocation){
-        if (gpsLocation == null || gpsLocation == "")
-            return null;
-        var _point = [];
-        _point = gpsLocation.split(',');
-        return new BMap.Point(_point[0], _point[1]);
-    }
-
-
-
-
-
+//    var mapGps = toBPoint(mapLoction);
+//
+//    function toBPoint(gpsLocation){
+//        if (gpsLocation == null || gpsLocation == "")
+//            return null;
+//        var _point = [];
+//        _point = gpsLocation.split(',');
+//        return new BMap.Point(_point[0], _point[1]);
+//    }
 
     function openLocation() {
-        WeixinJSBridge.invoke("openLocation",{
+        wx.invoke("openLocation",{
                     "latitude" : mapGps.lat, //纬度
                     "longitude" : mapGps.lng, //经度
                     "name" : title, //POI名称
@@ -123,7 +121,5 @@
         if (r != null) return (r[2]);
         return null;
     }
-    window.onload = function() {
-        openLocation();
-    }
+
 </script>
