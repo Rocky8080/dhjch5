@@ -148,15 +148,15 @@ window.onload = function() {
 
 
     // 绘制 开始,结束点
-    var startLoc = _ViewportArr[0];
-    var endLoc = _ViewportArr[_ViewportArr.length - 1];
-    var routeStart = new BMap.Icon("skins/images/route_start.png", new BMap.Size(38,60));
-    var routeEnd = new BMap.Icon("skins/images/route_end.png", new BMap.Size(38,60));
+    var endLoc = _ViewportArr[0];
+    var startLoc = _ViewportArr[_ViewportArr.length - 1];
+    var routeStart = new BMap.Icon("skins/images/start.png", new BMap.Size(22,64));
+    var routeEnd = new BMap.Icon("skins/images/end.png", new BMap.Size(22,64));
 
-    var startMarker = new BMap.Marker(startLoc,{icon:routeStart,width:'50%'});
+    var startMarker = new BMap.Marker(startLoc,{icon:routeStart});
     var endMarker = new BMap.Marker(endLoc,{icon:routeEnd});
-//    map.addOverlay(startMarker);
-//    map.addOverlay(endMarker);
+    map.addOverlay(startMarker);
+    map.addOverlay(endMarker);
 
     /*  driving.search(myP1, myP2);
       driving.search(myP2, myP3);
