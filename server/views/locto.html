@@ -89,6 +89,7 @@
 //        history.replaceState();
 //        window.location = history.go(-1);
         window.history.back();
+        wx.closeWindow();
         /*
          * 注意：
          * 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
