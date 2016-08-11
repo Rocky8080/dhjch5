@@ -62,8 +62,7 @@
     function toBPoint(gpsLocation){
         if (gpsLocation == null || gpsLocation == "")
             return null;
-        var _point = [];
-        _point = gpsLocation.split(',');
+        var _point = gpsLocation.split(',');
 //        return new BMap.Point(_point[0], _point[1]);
         return _point;
     }
