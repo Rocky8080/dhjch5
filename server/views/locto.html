@@ -44,7 +44,7 @@
 </head>
 
 <body>
-<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
 <script src="skins/js/function.js"></script>
 <script src="skins/js/jquery-2.1.1.min.js"></script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
@@ -63,8 +63,8 @@
         if (gpsLocation == null || gpsLocation == "")
             return null;
         var _point = gpsLocation.split(',');
-//        return new BMap.Point(_point[0], _point[1]);
-        return _point;
+        return new BMap.Point(_point[0], _point[1]);
+//        return _point;
     }
 
     function openLocation() {
@@ -78,10 +78,10 @@
 //                    alert(e.err_msg)
 //                })
         wx.openLocation({
-//            latitude: mapGps.lat,
-            latitude: mapGps[1],
-//            longitude: mapGps.lng,
-            longitude: mapGps[0],
+            latitude: mapGps.lat,
+//            latitude: mapGps[1],
+            longitude: mapGps.lng,
+//            longitude: mapGps[0],
             name: decodeURI(title),
             scale: 13
         });
