@@ -30,7 +30,7 @@
 					"type":"dining",
 					"area":"",
 					"description":"",
-					"location":[115.632809,39.949316],
+					"location":[39.943650,115.626210],
 					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg","../tempData/@/tempFile/hotspot_1_3.jpg"]
 				},
 				{
@@ -38,14 +38,14 @@
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[115.665571,39.966997],
+					"location":[39.961613,115.668054],
 					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_2_2.jpg"]
 				},
 				{
 					"title":"爨底下村是门头沟有名的古镇！",
 					"type":"landscape",
 					"area":"",
-					"location":[115.652568,40.001061],
+					"location":[39.995270,115.645773],
 					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg"],
 					"description":"作为本次摩旅行程（吃饭为主，哈哈），虽G109还有很多景点，例如珍珠湖、妙峰山等等，但需要徒步，不太适合，而且时间比较紧张，本次线路就不过多介绍景点了。"
 

@@ -55,11 +55,17 @@
 					"images":[""],
 					"description":"咱摩托车的优势来啦，可以从小道上去，但是各位摩友还是要特别小心，从这里往上走的路不宽、没有护栏、也没有路灯，弯道和坡道较大，而这时路上已经能看到北京全景了，大家千万不要分神，注意安全！！"
 				},
+								{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":""
+				},
 				{
 					"title":"注意安全",
 					"type":"curve",
 					"area":"",
-					"description":"",
+					"description":"【特别提示】截止到发稿时间，收到摩友消息，栏杆左侧的土路也已经被封住了，只有右边非常小的口子能过，但是大一些的摩托或者带边箱的摩托车这个地方是过不去了！",
 					"images":["../tempData/@/tempFile/hotspot_4_1.jpg","../tempData/@/tempFile/hotspot_4_2.jpg"]
 				},
 				{
