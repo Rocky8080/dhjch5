@@ -44,7 +44,7 @@
 </head>
 
 <body>
-<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=CCcf0ab10b51b1f0e900bc6ff14f3d3a"></script>
 <script src="skins/js/function.js"></script>
 <script src="skins/js/jquery-2.1.1.min.js"></script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
@@ -63,8 +63,8 @@
         if (gpsLocation == null || gpsLocation == "")
             return null;
         var _point = [];
-        return _point = gpsLocation.split(',');
-//        return new BMap.Point(_point[0], _point[1]);
+        _point = gpsLocation.split(',');
+        return new BMap.Point(_point[0], _point[1]);
     }
 
     function openLocation() {
@@ -78,8 +78,8 @@
 //                    alert(e.err_msg)
 //                })
         wx.openLocation({
-            latitude: mapGps[1],
-            longitude: mapGps[0],
+            latitude: mapGps.lat,
+            longitude: mapGps.lng,
             name: decodeURI(title),
             scale: 13
         });
@@ -89,7 +89,7 @@
 //        history.replaceState();
 //        window.location = history.go(-1);
 //        window.history.back();
-//        wx.closeWindow();
+        wx.closeWindow();
         /*
          * 注意：
          * 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
