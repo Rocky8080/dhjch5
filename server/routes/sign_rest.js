@@ -1,9 +1,8 @@
 /**
- * Created by Rocky on 16/7/20.
+ * Created by Rocky on 16/8/12.
  */
 var express = require('express');
-var bodyParser = require('body-parser')
-
+// var bodyParser = require('body-parser')
 
 var http = require('https');
 var router = express.Router();
@@ -20,6 +19,7 @@ var appId = APPID;
 var nonceStr;
 var timestamp;
 var signature;
+
 
 function refresh_token(){
     client.on('connect', function() {
@@ -81,39 +81,19 @@ function refresh_token(){
     });
 }
 
-/* GET home page. */
-router.get('/locto.html', function(req, res) {
-    console.log('original url : ' + (req.originalUrl));
-    console.log('encode url : ' + encodeURI(req.originalUrl));
-    console.log('decode url : ' + decodeURI(req.originalUrl));
-    var fullUrl = req.protocol + '://' + req.get('host') + (req.originalUrl);
-    console.log('full_url:' + fullUrl);
-    refresh_token();
 
-    var sign_params = sign(ticket, fullUrl);
-    console.log(sign_params);
-    res.render('locto.html', {
-        appId:appId,
-        nonceStr:sign_params.nonceStr,
-        timestamp:sign_params.timestamp,
-        signature:sign_params.signature});
-});
+// // create application/json parser
+// var jsonParser = bodyParser.json()
+//
+// // create application/x-www-form-urlencoded parser
+// var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-router.get('/sign', function (req, res) {
+// POST /login gets urlencoded bodies
+router.post('/sign', function (req, res) {
+    if (!req.body) return res.sendStatus(400)
+    res.send('welcome, ' + req.body.username)
+})
+
+router.post('/sign', function (req, res) {
     res.send('welcome, rocky!');
 })
-
-
-// create application/json parser
-var jsonParser = bodyParser.json()
-
-// create application/x-www-form-urlencoded parser
-var urlencodedParser = bodyParser.urlencoded({ extended: true })
-
-router.post('/sign',urlencodedParser, function (req, res) {
-    if (!req.body) return res.sendStatus(400);
-    console.log(req.body);
-    res.send('welcome, ' + req.body.username);
-})
-
-module.exports = router;

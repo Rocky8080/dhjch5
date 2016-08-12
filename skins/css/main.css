@@ -30,7 +30,7 @@
 .listLS dt {
 	color: #000;
 	display: block;
-	font-size: 1.3rem; /* 目录页标题  */
+	font-size: 1.2rem; /* 目录页标题  */
 	line-height: 100%;
 	height: 1.3rem;
 	padding-left: 1.2rem;
@@ -51,7 +51,7 @@
 	overflow: hidden;
 }
 .listLS span.lb {
-	font-size:small;  
+	font-size:0.4rem;  /* 目录页左下角日期  */
 	position: absolute;
 	bottom: 1rem;
 	color: #ccc;
@@ -59,13 +59,13 @@
 	height: 1.4rem;
 }
 #showWrap {
-	font-size: 1.2rem; /* 详细页右上角日期  */
+	font-size: 1.0rem; /* 详细页右上角日期  */
 }
 #showWrap header {
 }
 #showWrap header h1 {
 	color: black;
-	font-size: 1.8rem; /* 详细页总标题 */
+	font-size: 1.4rem; /* 详细页总标题 */
 }
 #showWrap header p {
 	text-align: right;
@@ -84,7 +84,7 @@
 #showWrap .mainRoute h2, #showWrap .referrer h2, #showWrap .scenery h3 {
 	color: black;
 	font-weight: bold;
-	font-size: 1.3rem;  /* 详细页段落标题 */
+	font-size: 1.2rem;  /* 详细页段落标题 */
 	line-height: 2rem;
 	margin: 2rem 0 1rem 0;
 }

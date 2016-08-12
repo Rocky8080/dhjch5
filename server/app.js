@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 // var routes = require('./routes/index');
 var maps = require('./routes/map');
 var locto = require('./routes/locto');
+var signrest = require('./routes/sign_rest');
 // var users = require('./routes/users');
 
 var app = express();
@@ -29,11 +30,17 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+
+app.use(bodyParser.json({ type: 'application/*+json' ,limit: '1mb'}))
+// app.use(bodyParser.json({limit: '1mb'}));
+
 // app.use(express.static(path.join(__dirname, 'public')));
 
 // app.use('/users', users);
 app.use('/', maps);
 app.use('/', locto);
+// app.use('/sign', signrest);
 // app.use('/', routes);
 
 app.use('/skins', express.static('../skins'));
@@ -72,6 +79,17 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+
+// create application/x-www-form-urlencoded parser
+// var urlencodedParser = bodyParser.urlencoded({ extended: false })
+// var jsonParser = bodyParser.json()
+//
+// // POST /login gets urlencoded bodies
+// app.post('/sign', urlencodedParser, function (req, res) {
+//   if (!req.body) return res.sendStatus(400)
+//   res.send('welcome, ' + req.body.username)
+// })
 
 
 module.exports = app;
