@@ -99,21 +99,27 @@ router.get('/locto.html', function(req, res) {
         signature:sign_params.signature});
 });
 
-router.get('/sign', function (req, res) {
-    res.send('welcome, rocky!');
-})
-
-
 // create application/json parser
 var jsonParser = bodyParser.json()
 
 // create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: true })
 
-router.post('/sign',urlencodedParser, function (req, res) {
-    if (!req.body) return res.sendStatus(400);
-    console.log(req.body);
-    res.send('welcome, ' + req.body.username);
+router.get('/sign',urlencodedParser, function (req, res) {
+
+    var fullUrl = req.query.fullurl;
+    refresh_token();
+
+    var sign_params = sign(ticket, fullUrl);
+    console.log(sign_params);
+
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify({
+        appId:appId,
+        nonceStr:sign_params.nonceStr,
+        timestamp:sign_params.timestamp,
+        signature:sign_params.signature}
+        , null, 3));
 })
 
 module.exports = router;
