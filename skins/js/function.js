@@ -18,3 +18,16 @@ function setLocationFun(json){
 	}
 	return j.join('|');
 }
+
+
+function openLocation(location, title) {
+	var gps = location.split(',');
+	wx.openLocation({
+		latitude: gps[1],
+//            latitude: mapGps[1],
+		longitude: gps[0],
+//            longitude: mapGps[0],
+		name: decodeURI(title),
+		scale: 13
+	});
+}

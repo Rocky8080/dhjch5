@@ -20,6 +20,8 @@
     <script src="../skins/js/mixedTmplData.js"></script>
     <script src="../skins/js/swiper.min.js"></script>
     <script src="../skins/js/function.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
     <script>
     $(function() {
         //
@@ -122,6 +124,39 @@
                 centeredSlides: true,
             });
         }, 100);
+    }
+
+
+
+    window.onload = function() {
+        var fullurl = window.location.href;
+        var jqxhr = $.get( "/sign", {fullurl:fullurl}, function(data) {
+            wx.config({
+                debug: false,
+                appId: data.appId,
+                nonceStr: data.nonceStr,
+                timestamp: data.timestamp,
+                signature: data.signature,
+                jsApiList: [
+                    'checkJsApi',
+                    'onMenuShareTimeline',
+                    'openLocation',
+                    'getLocation'
+                ]
+            });
+
+            wx.ready(function () {
+
+                wx.checkJsApi({
+                    jsApiList: ['openLocation'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+                    success: function(res) {
+                        // 以键值对的形式返回，可用的api值true，不可用为false
+                        // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+                    }
+                });
+
+            });
+        });
     }
     </script>
 </body>

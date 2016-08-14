@@ -23,6 +23,7 @@ var signature;
 
 function refresh_token(){
     client.on('connect', function() {
+
     });
 
     client.get('token', function(err, reply) {

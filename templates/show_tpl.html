@@ -78,7 +78,8 @@
 					{% }}%}
 
 					{% if (idp.location != null) { %}
-						<a href="/locto.html?title={%=(idp.title) %}&location={%=idp.location%}"><img src="../skins/images/route_btn.jpg" width="100%"/></a>
+						<!--<a href="/locto.html?title={%=(idp.title) %}&location={%=idp.location%}"><img src="../skins/images/route_btn.jpg" width="100%"/></a>-->
+						<a href="javascript:openLocation('{%=idp.location%}','{%=idp.title%}');"><img src="../skins/images/route_btn.jpg" width="100%"/></a>
 					{% } %}
 				</div>
 
