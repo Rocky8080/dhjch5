@@ -5,10 +5,10 @@
     "total": 12,
     "data":[
 		{
-			"title":"路书：京北激情风景线",
+			"title":"路书：京北激情风景线（导航版）",
 			"summary":"",
 			"img_url":"../tempData/@/tempFile/Propaganda_1.png",
-			"create_time":"2016/05",
+			"create_time":"大话机车LifeStyle",
 			"video_url":"http://v.qq.com/iframe/player.html?vid=d030874h5lq&tiny=0&auto=0",
 			"main_route": {
 				"img_url":"../tempData/@/tempFile/main.jpg",
@@ -21,10 +21,10 @@
 				{"l":[116.339677,40.438605]},
 				{"l":[116.367399,40.486663]},
 				{"l":[116.418802,40.535472]},
-				{"l":[116.300199,40.556658]},	
+				{"l":[116.300199,40.556658]},
 				{"l":[116.128263,40.608]},
 				{"l":[116.266063,40.39087]},
-				{"l":[116.221013,40.243439]},				
+				{"l":[116.221013,40.243439]},
 			],
 			"referrer":{
 				"name":"",
@@ -38,7 +38,7 @@
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[116.537558,40.247976],
+					"location":[40.241730,116.531170],
 					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg","../tempData/@/tempFile/hotspot_1_3.jpg"]
 				},
 				{
@@ -46,7 +46,7 @@
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[116.34881,40.336134],
+					"location":[116.342168,40.330450],
 					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_2_2.jpg"]
 				},
 				{
@@ -54,49 +54,49 @@
 					"type":"dining",
 					"area":"",
 					"description":"",
-					"location":[116.368932,40.379348],
+					"location":[116.362400,40.373480],
 					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg"]
-				},	
+				},
 				{
 					"title":"机车主题餐吧",
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[116.339677,40.438605],
+					"location":[116.333413,40.432510],
 					"images":["../tempData/@/tempFile/hotspot_4_1.jpg"]
-				},	
+				},
 				{
 					"title":"安四路弯道密集区",
 					"type":"curve",
 					"area":"",
 					"description":"",
-					"location":[116.367399,40.486663],
+					"location":[116.362499,40.480667],
 					"images":["../tempData/@/tempFile/hotspot_5_1.jpg","../tempData/@/tempFile/hotspot_5_2.jpg","../tempData/@/tempFile/hotspot_5_3.jpg"]
-				},	
+				},
 				{
 					"title":"四海镇广场",
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[116.418802,40.535472],
+					"location":[116.412490,40.529210],
 					"images":["../tempData/@/tempFile/hotspot_6_1.jpg"]
-				},	
+				},
 				{
 					"title":"延琉路林荫道",
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[116.300199,40.556658],
+					"location":[116.293545,40.550070],
 					"images":["../tempData/@/tempFile/hotspot_7_1.jpg","../tempData/@/tempFile/hotspot_7_2.jpg","../tempData/@/tempFile/hotspot_7_3.jpg"]
-				},	
+				},
 				{
 					"title":"昌赤路防火道 折返点",
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[116.128263,40.608],
+					"location":[116.121701,40.601898],
 					"images":["../tempData/@/tempFile/hotspot_8_1.jpg"]
-				},	
+				},
 				{
 					"title":"昌赤路弯道密集区",
 					"type":"curve",
@@ -110,16 +110,16 @@
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[116.221013,40.243439],
+					"location":[116.214559,40.237867],
 					"images":["../tempData/@/tempFile/hotspot_10_1.jpg"]
-				},				
+				},
 				{
 					"type":"",
 					"area":"",
 					"images":[""],
 					"description":"线路总结：值得收藏的跑山线路 线路跨越顺义-昌平-延庆北京最美京北的三个区，线路景色优美，路面平整干净，摩托车、汽车，骑行自行车都是不错的线路。"
 				},
-		
+
 			]
 		}
 	]
