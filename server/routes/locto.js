@@ -12,8 +12,8 @@ var sign = require('../sign');
 
 var client = redis.createClient(); //creates a new client
 
-var APPID = 'wxa288ea63f4c9c3be';
-var APPSECRET = '6dc41cf6db56d3513f3661dd7ec35240';
+var APPID = 'wx6f8c4ea1482d635a';
+var APPSECRET = 'f86cebaa52ed63793354ab2e61ee9f3e';
 var token;
 var ticket;
 var appId = APPID;
