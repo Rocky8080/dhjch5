@@ -1,9 +1,9 @@
 {
-    "success":true,
-    "records":160,
-    "page": 5,
-    "total": 12,
-    "data":[
+	"success":true,
+	"records":160,
+	"page": 5,
+	"total": 12,
+	"data":[
 		{
 			"title":"路书:京西摩饭之旅-百花人家(导航版）",
 			"summary":"",
@@ -42,7 +42,7 @@
 					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_2_2.jpg"]
 				},
 				{
-					"title":"爨底下村是门头沟有名的古镇！",
+					"title":"爨底下村是门头沟有名的古村！",
 					"type":"landscape",
 					"area":"",
 					"location":[115.645773,39.995270],
