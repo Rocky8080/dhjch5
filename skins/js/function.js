@@ -21,6 +21,9 @@ function setLocationFun(json){
 
 
 function openLocation(location, title) {
+	if (title == undefined || title == 'undefined'){
+		title = "";
+	}
 	var gps = location.split(',');
 	wx.openLocation({
 		latitude: parseFloat(gps[1]),
