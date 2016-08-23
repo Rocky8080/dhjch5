@@ -38,7 +38,7 @@
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[40.241730,116.531170],
+					"location":[116.531049,40.241676],
 					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg","../tempData/@/tempFile/hotspot_1_3.jpg"]
 				},
 				{
@@ -94,7 +94,7 @@
 					"type":"landscape",
 					"area":"",
 					"description":"",
-					"location":[116.121701,40.601898],
+					"location":[116.121728,40.602219],
 					"images":["../tempData/@/tempFile/hotspot_8_1.jpg"]
 				},
 				{
