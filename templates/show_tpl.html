@@ -28,11 +28,23 @@
 			<div>
 
 				<img src="{%=repPath(idl.main_route.img_url,getQueryString('id'))%}" width="100%" >
+				{%
+					if (idl.main_route.img_url2 != undefined){
+				%}
+					<img src="{%=repPath(idl.main_route.img_url2,getQueryString('id'))%}" width="100%" >
+				{%
+					}
+				%}
 				<p>{%=idl.main_route.description%}</p>
+				{%
+					if (idl.locationAll != undefined){
+				%}
 				<a href='/map.html?title=线路总览&routes={%=setLocationFun(idl.locationAll)%}'>
 					<img src="../skins/images/fullmap_btn.png" width="100%"/>
 				</a>
-
+				{%
+					}
+				%}
 			</div>
 		</section>
 		{%
