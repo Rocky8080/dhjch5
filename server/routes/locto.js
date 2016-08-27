@@ -7,10 +7,17 @@ var bodyParser = require('body-parser')
 
 var http = require('https');
 var router = express.Router();
-var redis = require('redis');
 var sign = require('../sign');
 
-var client = redis.createClient(); //creates a new client
+// var redis = require('redis');
+// var client = redis.createClient(); //creates a new client
+
+var redis = require('redis'),
+    RDS_PORT = 6347,		//端口号
+    // RDS_PORT = 6379,		//端口号
+    RDS_HOST = '127.0.0.1',	//服务器IP
+    RDS_OPTS = {},			//设置项
+    client = redis.createClient(RDS_PORT,RDS_HOST,RDS_OPTS);
 
 var APPID = 'wx6f8c4ea1482d635a';
 var APPSECRET = 'f86cebaa52ed63793354ab2e61ee9f3e';

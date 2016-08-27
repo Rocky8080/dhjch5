@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 // var routes = require('./routes/index');
 var maps = require('./routes/map');
 var locto = require('./routes/locto');
-var signrest = require('./routes/sign_rest');
+// var signrest = require('./routes/sign_rest');
 // var users = require('./routes/users');
 
 var app = express();

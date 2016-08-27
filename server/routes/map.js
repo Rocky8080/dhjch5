@@ -4,10 +4,18 @@
 var express = require('express');
 var http = require('https');
 var router = express.Router();
-var redis = require('redis');
+// var redis = require('redis');
 var sign = require('../sign');
 
-var client = redis.createClient(); //creates a new client
+// var client = redis.createClient(); //creates a new client
+
+var redis = require('redis'),
+    RDS_PORT = 6347,		//端口号
+// RDS_PORT = 6379,		//端口号
+    RDS_HOST = '127.0.0.1',	//服务器IP
+    RDS_OPTS = {},			//设置项
+    client = redis.createClient(RDS_PORT,RDS_HOST,RDS_OPTS);
+
 
 var APPID = 'wxa288ea63f4c9c3be';
 var APPSECRET = '6dc41cf6db56d3513f3661dd7ec35240';
