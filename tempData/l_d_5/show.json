@@ -1,0 +1,272 @@
+{
+    "success":true,
+    "records":160,
+    "page": 5,
+    "total": 12,
+    "data":[
+		{
+			"title":"路书:穿越必战黄草梁（黄草梁右道）",
+			"summary":"",
+			"img_url":"../tempData/@/tempFile/Propaganda_1.png",
+			"create_time":"大话机车LifeStyle",
+			"video_url":"http://v.qq.com/iframe/player.html?vid=h0326lxu3rg&tiny=0&auto=0", 
+			"main_route": {
+				"img_url":"../tempData/@/tempFile/main-1.jpg",
+				"img_url2":"../tempData/@/tempFile/main-2.jpg",
+				"description":"老掌沟、好汉坡、黄草梁、一线天！曾几何时，这些地名儿对我们大部分人来说是传说一样的存在。似乎那都是留给勇敢者的挑战，而这些挑战总是与灵魂的放逐相连。这些地方是重度越野发烧友的天堂，是各种改装车的秀场，是平凡如你我的人多少次跃跃欲试后的一声叹息。当然，这些就真的那么遥不可及还是我们自己在吓唬自己，找个'老鸟'带着我们走一趟比什么都重要。这期的《大话机车》路书系列'F4'又一次聚齐儿，在ALPHA的带领下，我们走进了黄草梁。他说：GL8都能走。好吧！听他的！ "
+			},			
+
+			"referrer":{
+				"name":"",
+				"description":"",
+				"img_url":"../tempData/@/tempFile/explorer.jpg",
+				"bio":"http://mp.weixin.qq.com/s?__biz=MzI0OTE2MzIyOA==&mid=2658511823&idx=1&sn=c590302edcfdb0bd06bf3f70652d9256&scene=0#wechat_redirect"
+			},
+			"photos":[
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"先来看看度娘上如何描述黄草梁：黄草梁自然风景区，位于北京市门头沟区斋堂镇北14公里处，离天安门的直线距离为70公里。黄草梁，被誉为古道明珠，是京西古道上一个极好的旅游驿站。 黄草梁与灵山、百花山、妙峰山遥远相望。这里主峰海拔1773米，为北京市西南地区高峰之一。"
+				},	
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"来，聊正题儿了！<br>这次介绍的并不是常规进入黄草梁景区的行车路线，而是从门头沟区斋堂镇沿河口村向西走38公里山间小路翻山越岭到达黄草梁景区后山的越野路线。"
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"<font  color=red>提示：建议使用高德地图，进入山区手机无信号需要下载离线地图！使用百度地图会有些路段缺失！</font>"
+				},				
+				{
+					"title":"第一段 G109集结<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.108540,39.942880],
+					"images":["../tempData/@/tempFile/hotspot_1_1.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"一般去门头沟G109国道，都会走阜石路过了西六环后第一个红绿灯右转，到滨河路加油站(麦当劳)集结出发。"
+				},
+								{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"石担路行驶14公里至下苇甸路口，沿X101公路行驶12公里至安家庄桥上G109国道。"
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_1_2.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"这段路途经著名的东方红隧道，景色美，弯道多，坡度大，是压弯天堂！但是这条路比较窄，东方红隧道西侧都是比较急的下坡弯，同时周末社会车辆也比较多，应注意骑行安全。"
+				},	
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"建议先买了吃的和带够水，进入越野路段后就没有补给站了，而且越野中途刚好是到了中午饭点，饿着肚子跑可够难受的！",
+					"location":[116.086784,39.980857],
+					"images":["../tempData/@/tempFile/hotspot_1_3.jpg"]
+				},					
+				{
+					"title":"第二段 斋幽路<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"dining",
+					"area":"",
+					"description":"沿G109向西行驶30公里，到达斋幽路路口（高沿路x008）。G109不用多介绍了，地球人都滋道！",
+					"location":[115.717417,39.979315],
+					"images":["../tempData/@/tempFile/hotspot_2_1.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"斋幽路路口有一个中石化加油站，提供92和95号汽油，还有便利店，可以作为后面越野路线的补给站。需要注意的是，这家加油站不是24小时营业，19:00关门。",
+					"images":["../tempData/@/tempFile/hotspot_2_2.jpg"]
+				},				
+				{
+					"title":"第三段 沿河城<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[115.717374,40.064492],
+					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg"]
+				},	
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"沿斋幽路向北骑行13.8公里，到达沿河城路口。这段路弯道多，路面很宽，社会车辆少，很适合高速压弯。需要注意的是这段路没有路灯，夜间骑行注意安全。"
+				},				
+				{
+					"title":"第四段 黄草梁-麻黄峪村分叉口<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"curve",
+					"area":"",
+					"description":"",
+					"location":[115.560793,40.108763],
+					"images":["../tempData/@/tempFile/hotspot_4_1.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"沿河城路口向西骑行625米至沿黄公路石碑，先略微感受下沙石路面越野。感觉如何？如果感觉还好，请从这里向右走，进入黄草梁右道。从这段路开始将正式离开人类最伟大的三个发明：柏油马路、手机信号和导航地图！请做好充分的车辆准备和心理准备。",
+					"images":["../tempData/@/tempFile/hotspot_4_2.jpg","../tempData/@/tempFile/hotspot_4_3.jpg","../tempData/@/tempFile/hotspot_4_4.jpg","../tempData/@/tempFile/hotspot_4_5.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"路上有沙石路，土路，碎石路，大石头路，车辙路，雨后还会有一些积水。基本上只要车子底盘够高，慢慢骑，所有的车都能过得来。",
+					//"location":[119.557724,46.5923],
+					"images":["../tempData/@/tempFile/hotspot_4_6.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"",
+					"location":[115.636747,40.104353],
+					"images":["../tempData/@/tempFile/hotspot_4_7.jpg"]
+				},	
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_4_8.jpg","../tempData/@/tempFile/hotspot_4_9.jpg"]
+				},				
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"这段路会路过一个养蜜蜂的地方，路边有很多蜂箱，应该提前做好防护扣上面镜防止被蜜蜂蜇伤。",
+					"location":[115.560815,40.108714],
+					"images":["../tempData/@/tempFile/hotspot_4_10.jpg","../tempData/@/tempFile/hotspot_4_11.jpg","../tempData/@/tempFile/hotspot_4_12.jpg"]
+				},		
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"提示：<br>如果感觉黄草梁右道太容易或太难，请从这沿黄公路石碑向左走进入黄草梁左道，前往一线天。到一线天后可以选择照个相到此一游然后原路返回，或继续走下去从难度较高的左道前往黄草梁。",
+					//"location":[119.552107,46.586208],
+					"images":[""]
+				},				
+				{
+					"title":"第五段 黄草梁登顶<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[115.574178,40.099285],
+					"images":["../tempData/@/tempFile/hotspot_5_1.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"黄草梁-麻黄裕村岔路口左转向南上山，越野骑行3.5公里左右到达黄草梁山顶。",
+					"images":["../tempData/@/tempFile/hotspot_5_2.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"这段路左边是悬崖，还有许多雨水冲刷出来的水沟，骑行时应当尽量避免骑进车辙沟及水沟。",
+					"images":["../tempData/@/tempFile/hotspot_5_3.jpg"]
+				},	
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"黄草梁山顶有一些长坡冲上去，上面景色超美！",
+					"images":["../tempData/@/tempFile/hotspot_5_4.jpg","../tempData/@/tempFile/hotspot_5_5.jpg","../tempData/@/tempFile/hotspot_5_6.jpg","../tempData/@/tempFile/hotspot_5_7.jpg","../tempData/@/tempFile/hotspot_5_8.jpg"]
+				},								
+				{
+					"title":"第六段 麻黄峪村<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[115.546524,40.104525],
+					"images":["../tempData/@/tempFile/hotspot_6_1.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"",
+					//"location":[116.34881,40.336134],
+					"images":["../tempData/@/tempFile/hotspot_6_2.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"我们推荐原路返回到麻黄裕村岔路口，向西穿过麻黄峪村翻过一座山到达S241孙庄子乡路口。",
+					//"location":[116.34881,40.336134],
+					"images":["../tempData/@/tempFile/hotspot_6_3.jpg"]
+				},	
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"",
+					//"location":[116.34881,40.336134],
+					"images":["../tempData/@/tempFile/hotspot_6_4.jpg","../tempData/@/tempFile/hotspot_6_5.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"麻黄峪村有家烤全羊饭店，看上去很美味！人多的话可以搞一只羊尝尝！",
+					//"location":[116.34881,40.336134],
+					"images":[""]
+				},
+				{
+					"title":"第七段 回程<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"landscape",
+					"area":"",
+					"description":"",
+					"location":[116.351144,40.026197],
+					"images":["../tempData/@/tempFile/hotspot_7_1.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"至此本条穿越路线已经走完，你身在河北省张家口市怀来县孙庄子乡。回家的话推荐沿S241向北上G6京藏高速回京。",
+					//"location":[116.34881,40.336134],
+					"images":["../tempData/@/tempFile/hotspot_7_2.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"到达孙庄子乡路口，你应该会有一种从原始社会穿越回现代社会的感觉！柏油马路真是一个伟大的发明！",
+					"location":[115.605838,40.233268],
+					"images":["../tempData/@/tempFile/hotspot_7_3.jpg"]
+				},	
+				{
+					"title":"特别小贴士：",
+					"type":"curve",
+					"area":"",
+					"description":"提示：<br>如果到达黄草梁后沿路继续前进就是左道了，可以通过一线天走回沿黄公路石碑，不过这段路难度较大，不推荐一般摩友走。<br>另外一条从黄草梁回程路线是：幽州峡谷。具体怎么走我们将会整理后制作成下一期路书分享给大家！",
+					"images":[""]
+				}			
+					
+			]
+		}
+	]
+}
