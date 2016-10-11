@@ -38,6 +38,13 @@
             "summary":"老掌沟、黄草梁、一线天！曾几何时，这些地名儿对我们大部分人来说是传说一样的存在。是平凡如你我的人多少次跃跃欲试后的一声叹息。",
             "img_url":"../tempData/@/tempFile/man_folder.jpg",
             "create_time": " "
+        },
+		{
+			"id":6,
+            "title": "一键导航: 机车情怀清上清园",
+            "summary":"约三五好友，吃地道土著菜，饭后凉亭几人围坐，一壶清茶，开怀畅聊，无不惬意！这是我对清上清园的第一印象。",
+            "img_url":"../tempData/@/tempFile/man_folder.jpg",
+            "create_time": " "
         }		
     ]
 }

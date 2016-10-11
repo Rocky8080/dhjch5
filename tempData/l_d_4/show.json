@@ -11,6 +11,7 @@
 			"create_time":"大话机车LifeStyle",
 			"video_url":"http://v.qq.com/iframe/player.html?vid=e0325sml713&tiny=0&auto=0", 
 			"main_route": {
+				"title":"线路总览",
 				"img_url":"../tempData/@/tempFile/main-1.jpg",
 				"img_url2":"../tempData/@/tempFile/main-2.jpg",
 				"description":""

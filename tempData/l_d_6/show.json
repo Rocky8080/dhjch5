@@ -1,0 +1,98 @@
+{
+    "success":true,
+    "records":160,
+    "page": 5,
+    "total": 12,
+    "data":[
+		{
+			"title":"一键导航:机车情怀餐厅 清上清园",
+			"summary":"",
+			"img_url":"../tempData/@/tempFile/Propaganda_1.png",
+			"create_time":"大话机车LifeStyle",
+			//"video_url":"http://v.qq.com/iframe/player.html?vid=h0326lxu3rg&tiny=0&auto=0", 
+			"main_route": {
+				"title":"",
+				"img_url":"../tempData/@/tempFile/main-1.jpg",
+				//"img_url2":"../tempData/@/tempFile/main-2.jpg",
+				"description":"好机友的日常是什么样的？这是很多“外人”特别好奇的事。因为在他们眼里，我们很多人要么轰隆隆呼啸而过、好容易一不留神看清长什么样了，看到的是恨不得一脸纹身的一主儿。其实，摘了头盔我们和大家没区别，我们在一起也经常为吃什么而困惑。今天我们给大家推荐一个好机友聚会吃饭、喝茶、聊天的好去处——清上清园餐厅。 "
+			},			
+
+			"referrer":{
+				"name":"",
+				"description":"",
+				"img_url":"../tempData/@/tempFile/explorer.jpg",
+				"bio":"http://mp.weixin.qq.com/s?__biz=MzI0OTE2MzIyOA==&mid=2658511823&idx=1&sn=c590302edcfdb0bd06bf3f70652d9256&scene=0#wechat_redirect"
+			},
+			"photos":[
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"之所以给大家推荐这个餐厅，原因有两个：<br>一是，这家餐厅是一位和我们一样的机车骑士在经营。<br>二是，我们吃过几次之后，觉得值得推荐给大家。"
+				},				
+				{
+					
+					"area":"",
+					"description":"",
+					"location":[116.348661,40.034049],
+					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_6.jpg"]
+				},
+				{
+					"title":"一楼用餐",
+					"type":"dining",					
+					"area":"",
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_1_2.jpg","../tempData/@/tempFile/hotspot_1_3.jpg","../tempData/@/tempFile/hotspot_1_4.jpg","../tempData/@/tempFile/hotspot_1_5.jpg"]
+				},				
+				{
+					"title":"请上二楼",
+					"type":"dining",
+					"area":"",
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_2_2.jpg","../tempData/@/tempFile/hotspot_2_3.jpg","../tempData/@/tempFile/hotspot_2_4.jpg","../tempData/@/tempFile/hotspot_2_5.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"关于菜品，其实倒谈不上惊艳。只是，一来因为老板天天自己在这儿吃，在这儿招待自己的好友，所以对于菜品的安全和卫生不用有任何顾虑；二来饭菜也比较家常，吃着顺口儿。<br>何必大鱼大肉点上几个可口家常菜边吃边唠！",
+					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"<font color=blue size=3>除了各类家常菜当然还有横菜，什么水煮鱼啊、烤羊排啊、大虾、大螃蟹等等就不一一介绍了，反正用料和菜价都实在的恨！</font>"
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"这家店是一家有历史、有故事的地方。来这儿，可以把故事带走，也可以把自己的故事留下。这就是这家餐厅给我们的感觉。",
+					"location":[116.348661,40.034049],
+					"images":["../tempData/@/tempFile/hotspot_4_1.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"好啦，就介绍这么多吧，更多的故事还是去店里和孙老板边喝茶边聊吧！<br>不麻烦查地图了，点击上面的【导航去这里】按钮就可以一键导航了"
+				},	
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"<br><P align=center><font color=red size=4><strong>另外，好机友孙老板说了只要各位摩友来店里，一定给大大优惠！</strong></font></P>"
+				},	
+				{
+					"title":"【清上清园餐厅】",
+					"type":"curve",
+					"area":"",
+					"description":"地址：海淀区清河三街155号(清河儿童福利院对面)<br>电话：(010)62911510",
+					"images":[""]
+				}			
+					
+			]
+		}
+	]
+}
