@@ -35,7 +35,7 @@
 					
 					"area":"",
 					"description":"",
-					"location":[116.473223,39.984428],
+					"location":[116.473137,39.984425],
 					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg"]
 				},
 				{
@@ -80,7 +80,7 @@
 					"type":"dining",
 					"area":"",
 					"description":"",
-					"location":[116.473223,39.984428],
+					"location":[116.473137,39.984425],
 					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg","../tempData/@/tempFile/hotspot_3_3.jpg","../tempData/@/tempFile/hotspot_3_4.jpg","../tempData/@/tempFile/hotspot_3_5.jpg"]
 				},
 				{
