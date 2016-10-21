@@ -35,7 +35,7 @@
 					
 					"area":"",
 					"description":"",
-					"location":[116.472856,39.984195],
+					"location":[116.473223,39.984428],
 					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg"]
 				},
 				{
@@ -80,7 +80,7 @@
 					"type":"dining",
 					"area":"",
 					"description":"",
-					"location":[116.472856,39.984195],
+					"location":[116.473223,39.984428],
 					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg","../tempData/@/tempFile/hotspot_3_3.jpg","../tempData/@/tempFile/hotspot_3_4.jpg","../tempData/@/tempFile/hotspot_3_5.jpg"]
 				},
 				{
@@ -98,7 +98,7 @@
 					"images":[""]
 				},			
 				{
-					"title":"大话机车路书系列",
+					"title":"大话机车路书系列:",
 					"type":"curve",
 					"area":"",
 					"description":"大话机车带导航功能的路书均为大话机车节目组实地拍摄实地定位，非来自网络摘抄，所有图文内容地点均为真实内容！<br><a href='http://dhjc.ecartoon.net/views/index.html'><font color='blue'>【点击这里阅读更多导航路书】</font></a>",
