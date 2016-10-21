@@ -1,0 +1,110 @@
+{
+    "success":true,
+    "records":160,
+    "page": 5,
+    "total": 12,
+    "data":[
+		{
+			"title":"一键导航去洗车 望京自由港",
+			"summary":"",
+			"img_url":"../tempData/@/tempFile/Propaganda_1.png",
+			"create_time":"大话机车LifeStyle",
+			//"video_url":"http://v.qq.com/iframe/player.html?vid=h0326lxu3rg&tiny=0&auto=0", 
+			"main_route": {
+				"title":"",
+				"img_url":"../tempData/@/tempFile/main-1.jpg",
+				//"img_url2":"../tempData/@/tempFile/main-2.jpg",
+				"description":"车友聚会经常能听到这样的对话：<br>A:哎呀！昨儿刚洗的车，今儿又TM下雨。<br>B:我这车，两月没洗了，等下月去完阿尔山可以洗一次了。<br>A:我最受不了就是车脏了，不能有一丁点儿浮土。<br>B:GS就得是这样儿才像样儿嘛！<br>（A的内心戏：白眼、白眼、白眼！心中奔腾一万只草泥马！） "
+			},			
+
+			"referrer":{
+				"title":"好机友自由港老板李总",
+				"name":"",
+				"description":"",
+				"img_url":"../tempData/@/tempFile/explorer.jpg",
+				"bio":"http://mp.weixin.qq.com/s?__biz=MzI0OTE2MzIyOA==&mid=511027880&idx=1&sn=a5a4f939c8a8583c7767e6be3d375363&scene=19#wechat_redirect"
+			},
+			"photos":[
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"对于摩托车的日常使用，从来都有各种不同的用法儿。但是，喜欢一尘不染的骑士好像更多些。比如处女座的、强迫症的、刚买车的、洁癖的、喜欢去798的、买来看得时候比骑得时候多的。<br>我是忠实的勤洗派，每次玩耍回来，如果洗车店还在营业，一定要先洗车，再洗人！<br>说起洗摩托车，大多数摩友都有经历过，去街口儿洗汽车的店总是差点意思，车推出来哩哩啦啦，浑身滴答水不说，各种细节擦不到位，甚至因为结构的问题，里面有的地方还要存水，还得车友亲自上阵自己来。。。不得不承认，洗车是个技术活儿！"
+				},				
+				{
+					
+					"area":"",
+					"description":"",
+					"location":[116.472856,39.984195],
+					"images":["../tempData/@/tempFile/hotspot_1_1.jpg","../tempData/@/tempFile/hotspot_1_2.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"本次介绍的望京这家店【自由港】规模不小，老板也是摩友，<font color='blue'>业务专业精洗摩托车外，还有汽车维修、美容装饰、轮胎、救援等服务（自由港有多家分店，汽修业务相当资深！）</font>，另外望京自由港还是间不错的咖啡馆，也是小聚会不错的场所！"
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":["../tempData/@/tempFile/hotspot_1_3.jpg"],
+					"description":""
+				},
+								{
+					"type":"",
+					"area":"",
+					"images":["../tempData/@/tempFile/hotspot_1_4.jpg"],
+					"description":"首先声明，大话机车可没收自由港的广告费啊，今年去自由港洗车，老林2次、老钱4次、Rocky 2次、Alpha 1次，自己还办了洗车充值卡，盘点下来确实车洗的不错，完全是值得给大家推荐！（亲钱换来的真实感受，要得就是这个纯粹和坦荡。）"
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"自由港洗车的<font color='red'>最大特色是晚间也能洗车，最晚到24点</font>，这个太牛了，不用占工作时间来了，晚上把车洗白白的同时还可以吃点喝点小聚一下！"
+				},
+				{
+					"title":"重点说说机车的清洗过程吧",
+					"type":"curve",					
+					"area":"",
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_2_2.jpg","../tempData/@/tempFile/hotspot_2_3.jpg","../tempData/@/tempFile/hotspot_2_4.jpg","../tempData/@/tempFile/hotspot_2_5.jpg","../tempData/@/tempFile/hotspot_2_6.jpg","../tempData/@/tempFile/hotspot_2_7.jpg","../tempData/@/tempFile/hotspot_2_8.jpg","../tempData/@/tempFile/hotspot_2_9.jpg","../tempData/@/tempFile/hotspot_2_10.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"洗车一辆基本在50-60分钟，比洗汽车时间长，但洗摩托车的价格没比汽车高,非会员单次50元，会员的30元；还有更高级别的精洗美容服务，需要的话还是去店里咨询吧！"
+				},				
+				{
+					"title":"洗车时间这么长,去咖啡馆里坐坐！",
+					"type":"dining",
+					"area":"",
+					"description":"",
+					"location":[116.472856,39.984195],
+					"images":["../tempData/@/tempFile/hotspot_3_1.jpg","../tempData/@/tempFile/hotspot_3_2.jpg","../tempData/@/tempFile/hotspot_3_3.jpg","../tempData/@/tempFile/hotspot_3_4.jpg","../tempData/@/tempFile/hotspot_3_5.jpg"]
+				},
+				{
+					
+					"type":"",
+					"area":"",
+					"description":"<B> <span style='font-weight:bold;'>来总结一个</span></B>：<br>1、环境非常好，无论站在院儿外看着小伙儿们认真擦洗，还是喝着咖啡享受30块钱的尊贵都很OK的。<br>2、车洗的没得说，但是地点在望京，比如那些个住在大兴的不能常去，也很无奈。只能偶尔洗洗了。<br>3、咖啡至今没尝过，餐饮价格和星巴克差不多。中餐嘛等以后品尝完了再做评价！<br>介绍的差不多了，这里也是摩友经常聚会的地方，洗个车没准还能结交更多朋友！<br><br>店面地址是在望京，需要洗车的摩友们，可以<font color='red'>按上面的按钮【导航去这里】</font>就可以直接去了，也可以在地图搜索【自由港】！",
+					"images":[""]
+				},
+				{
+					"title":"【自由港】",
+					"type":"curve",
+					"area":"",
+					"description":"地址：阜通东大街西口公交站旁<br>电话：(010)66008989",
+					"images":[""]
+				},			
+				{
+					"title":"大话机车路书系列",
+					"type":"curve",
+					"area":"",
+					"description":"大话机车带导航功能的路书均为大话机车节目组实地拍摄实地定位，非来自网络摘抄，所有图文内容地点均为真实内容！<br><a href='http://dhjc.ecartoon.net/views/index.html'><font color='blue'>【点击这里阅读更多导航路书】</font></a>",
+					"images":[""]
+				}	
+			]
+		}
+	]
+}
