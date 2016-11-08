@@ -1,0 +1,164 @@
+{
+    "success":true,
+    "records":160,
+    "page": 5,
+    "total": 12,
+    "data":[
+		{
+			"title":"导航路书:越野挑战京西黄石港",
+			"summary":"",
+			"img_url":"../tempData/@/tempFile/Propaganda_1.png",
+			"create_time":"Alpha",
+			//"video_url":"http://v.qq.com/iframe/player.html?vid=h0326lxu3rg&tiny=0&auto=0", 
+			"main_route": {
+				"title":"",
+				"img_url":"../tempData/@/tempFile/main-1.jpg",
+				"img_url2":"../tempData/@/tempFile/main-2.jpg",
+				"description":""
+			},
+			"locationAll":[
+				{"l":[116.207439,39.891428]},//五环衙门口桥
+				{"l":[116.028473,39.882368]},//潭王路入口
+				{"l":[116.011441,39.905309]},//潭王路2
+				{"l":[115.964277,39.944888]},//潭王路 公路
+				//{"l":[116.003137,39.918776]},//潭王路3
+				//{"l":[115.991169,39.925125]},//黄石港入口
+				//{"l":[115.991357,39.925334]},//黄石港入口2
+				//{"l":[115.992714,39.925281]},//黄石港入口3
+				//{"l":[115.999216,39.92851]},//越野1黄石港村
+				//{"l":[115.993063,39.934837]},//越野2抢风坡村
+				//{"l":[115.994341,39.941484]},//黄土台村
+				//{"l":[115.989335,39.947373]},//越野3平地村
+				//{"l":[115.984179,39.957987]},//越野4  141村道出口
+				{"l":[116.086071,39.981893]},//王平镇宏益兴饭馆
+				{"l":[116.207597,39.92461]},//五环晋元桥
+			],			
+
+			"referrer":{
+				"title":"线路推荐人",
+				"name":"",
+				"description":"",
+				"img_url":"../tempData/@/tempFile/explorer.jpg",
+				"bio":"http://mp.weixin.qq.com/s?__biz=MzI3MjM4NjE5MQ==&mid=100000133&idx=1&sn=7adad6a3ce11d411e1c517d31eadf52d&scene=19#wechat_redirect"
+			},
+			"photos":[
+			    {
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"越玩越野，挑战完<a href='http://dhjc.ecartoon.net/views/show.html?id=5'><font color='blue'>【黄草梁】（可点击浏览）</font></a>之后，我们的自虐狂Alpha又来找寻非常之路:黄石港大坡，太刺激了。。。 "
+				},
+				 {
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"<br><br><font color='red' size=4>特别提示，由于【百度地图】导航不准确，请使用【高德地图】导航！</font>"
+				},
+				{
+					"title":"第一段潭柘寺环岛集结出发<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"landscape",					
+					"area":"",
+					"description":"从G109潭柘寺环岛出发，走潭王路王平方向，12公里石碑这里右手小土路道。<br>潭王路车不多，弯多，柏油不错，就是路面起伏有点大，压弯注意安全！",
+					"location":[116.031815,39.877929],
+					"images":["../tempData/@/tempFile/hotspot_1_1.jpg"]
+				},
+				{
+					"title":"第二段进发潭王路越野路段<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"landscape",					
+					"area":"",
+					"description":"沿着潭王路向黄石港前进，约12公里进入越野路段，注意这入口并不明显而且潭王路上也有很多分叉路况，建议开启导航。",
+					"location":[115.991207,39.925304],
+					"images":["../tempData/@/tempFile/hotspot_2_1.jpg","../tempData/@/tempFile/hotspot_2_2.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":["../tempData/@/tempFile/hotspot_2_3.jpg","../tempData/@/tempFile/hotspot_2_4.jpg"],
+					"description":"废弃的村落和小土路，不错不错，适合探险骑行！"
+				},	
+				{
+					"title":"第三段黄石港自虐越野<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"curve",					
+					"area":"",
+					"description":"",
+					"location":[115.993776,39.942305],
+					"images":["../tempData/@/tempFile/hotspot_3_1.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_3_2.jpg","../tempData/@/tempFile/hotspot_3_3.jpg","../tempData/@/tempFile/hotspot_3_4.jpg","../tempData/@/tempFile/hotspot_3_5.jpg","../tempData/@/tempFile/hotspot_3_6.jpg","../tempData/@/tempFile/hotspot_3_7.jpg","../tempData/@/tempFile/hotspot_3_8.jpg","../tempData/@/tempFile/hotspot_3_9.jpg","../tempData/@/tempFile/hotspot_3_10.jpg","../tempData/@/tempFile/hotspot_3_11.jpg","../tempData/@/tempFile/hotspot_3_12.jpg","../tempData/@/tempFile/hotspot_3_13.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"这里有很多岔路，分别去到不同角度的上坡和下坡，一定先走着探明白了再骑车过去！摩托车没倒挡，也就是说没有后悔药可以买。。。"
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_3_14.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"翻过山顶就下山了，找最缓的坡下，但是依然有点陡。。。<br>而且还有很多急转弯。。。<br>而且还有今年下大雨冲出来的许多很深的弯弯曲曲的水沟子。。。<br>而且水沟子里还有好多大石头。。。<br>好吧，不指望我这半吊子越野技术能骑下来了！<br>幸亏我腿长，坐在坐垫上，两腿撑着地慢慢下。。。"
+				},	
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_3_15.jpg","../tempData/@/tempFile/hotspot_3_16.jpg","../tempData/@/tempFile/hotspot_3_17.jpg","../tempData/@/tempFile/hotspot_3_18.jpg"]
+				},				
+				{
+					"title":"第四段结束越野!补充体力去<font color=blue size=2>（请用高德地图导航）</font>",
+					"type":"landscape",					
+					"area":"",
+					"description":"",
+					"location":[115.985097,39.95898],
+					"images":["../tempData/@/tempFile/hotspot_4_1.jpg","../tempData/@/tempFile/hotspot_4_2.jpg"]
+				},
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"",
+					"images":["../tempData/@/tempFile/hotspot_4_3.jpg"]
+				},	
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"从王平镇转入G109国道，吃个肘子夹火烧进城了！ 看清楚我这是<font color='red'>肘子夹火烧</font>，哈哈哈！！！"
+				},	
+				{
+					"type":"",					
+					"area":"",
+					"description":"",
+					"location":[116.086071,39.981893],
+					"images":["../tempData/@/tempFile/hotspot_4_4.jpg"]
+				},				
+				{
+					"type":"",
+					"area":"",
+					"images":[""],
+					"description":"总结：<br>潭王路距离城里很近，这段越野路也不长，很适合来练车，哈哈，作业完成！"
+				},
+				{
+					"title":"大话机车路书系列:",
+					"type":"curve",
+					"area":"",
+					"description":"大话机车带导航功能的路书均为大话机车节目组实地拍摄实地定位，非来自网络摘抄，所有图文内容地点均为真实内容！<br><a href='http://dhjc.ecartoon.net/views/index.html'><font color='blue'>【点击这里阅读更多导航路书】</font></a>",
+					"images":[""]
+				}	
+			]
+		}
+	]
+}
